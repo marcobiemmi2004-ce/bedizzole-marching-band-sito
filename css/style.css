@@ -601,6 +601,8 @@ footer a:hover { color: var(--bmb-green-light); }
   border-radius: 999px;
 }
 
+.person-card.tbd .name { color: #9a9d94; font-style: italic; }
+
 .source-note {
   font-size: 0.85rem;
   color: #8a8d84;
