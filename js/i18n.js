@@ -133,7 +133,7 @@
       'accademia.direttore': 'Direttore artistico: Nicola Orsato · 333 689 6735',
       'accademia.startbadge': 'Nuovi corsi',
       'accademia.startdate': 'Si parte il 7 settembre 2026',
-      'accademia.startloc': 'Via Monte Grappa, 11 – Bedizzole (BS)',
+      'accademia.startloc': 'Via Monte Grappa, 21 – Bedizzole (BS)',
       'accademia.corsiprop.kicker': 'Corsi (dal 7 settembre)',
       'accademia.corsiprop.h2': 'Cosa puoi imparare',
       'strumento.flauto': 'Flauto',
@@ -151,7 +151,6 @@
       'strumento.canto': 'Canto',
       'accademia.boxtitle': 'Mancano ancora alcuni dettagli pratici',
       'accademia.boxtext': 'Dal sito attuale non risultano età minima, costi/quote di iscrizione precisi né orari delle lezioni. Dammi questi dettagli quando li hai e completo la pagina.',
-      'accademia.addressnote': 'Nota per Marco: qui uso Via Monte Grappa 11 come indicato da te per i corsi, ma sulla pagina Contatti risultava Via Monte Grappa 21 (dal sito ufficiale). Confermami quale sia quella giusta così le allineo.',
 
       // ---- contatti.html ----
       'contatti.kicker': 'Contatti',
@@ -289,7 +288,7 @@
       'accademia.direttore': 'Artistic director: Nicola Orsato · 333 689 6735',
       'accademia.startbadge': 'New courses',
       'accademia.startdate': 'Starting September 7, 2026',
-      'accademia.startloc': 'Via Monte Grappa, 11 – Bedizzole (BS), Italy',
+      'accademia.startloc': 'Via Monte Grappa, 21 – Bedizzole (BS), Italy',
       'accademia.corsiprop.kicker': 'Courses (from September 7)',
       'accademia.corsiprop.h2': 'What you can learn',
       'strumento.flauto': 'Flute',
@@ -307,7 +306,6 @@
       'strumento.canto': 'Singing',
       'accademia.boxtitle': 'A few practical details are still missing',
       'accademia.boxtext': 'The current site doesn’t list a minimum age or precise enrolment fees and lesson schedules. Send me these details when you have them and I’ll complete the page.',
-      'accademia.addressnote': 'Note for Marco: here I use Via Monte Grappa 11 as you told me for the courses, but the Contact page shows Via Monte Grappa 21 (from the official site). Confirm which one is correct so I can align them.',
 
       'contatti.kicker': 'Contact',
       'contatti.h1': 'Write to us, or come visit on Thursdays',
