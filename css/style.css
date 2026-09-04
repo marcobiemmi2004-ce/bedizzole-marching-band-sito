@@ -613,6 +613,16 @@ footer a:hover { color: var(--bmb-green-light); }
 
 /* ---------- Events list ---------- */
 .event-list { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
+.empty-events-note {
+  text-align: center;
+  padding: 48px 24px;
+  margin-top: 20px;
+  border: 1px dashed #c9c8c2;
+  border-radius: var(--radius);
+  background: #fbfbf9;
+  color: #55584f;
+  font-size: 1.05rem;
+}
 .event-card {
   display: flex;
   align-items: center;

@@ -124,6 +124,7 @@
       'tag.festa': 'Festa paesana',
       'month.set': 'Set',
       'month.nov': 'Nov',
+      'eventi.empty': 'Nessun evento in programma al momento — torna a trovarci presto!',
       'eventi.note': 'Aggiungo volentieri orari di ritrovo e altri dettagli quando li hai.',
 
       // ---- accademia.html ----
@@ -280,6 +281,7 @@
       'tag.festa': 'Village festival',
       'month.set': 'Sep',
       'month.nov': 'Nov',
+      'eventi.empty': 'No events scheduled right now — check back soon!',
       'eventi.note': 'Happy to add gathering times and other details once you have them.',
 
       'accademia.kicker': 'Academy',
