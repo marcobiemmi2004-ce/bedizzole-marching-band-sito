@@ -16,16 +16,23 @@
       <img src="img/logo.png" alt="Logo Bedizzole Marching Band">
       <span class="brand-name">BEDIZZOLE<br><span>MARCHING BAND</span></span>
     </a>
-    <button class="nav-toggle" aria-label="Apri menu">&#9776;</button>
-    <ul class="nav-links">
-      <li><a href="chi-siamo.html">Chi Siamo</a></li>
-      <li><a href="storia.html">Storia</a></li>
-      <li><a href="accademia.html">Accademia</a></li>
-      <li><a href="eventi.html">Eventi Futuri</a></li>
-      <li><a href="contatti.html">Contatti</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="chi-siamo.html" data-i18n="nav.chisiamo">Chi Siamo</a></li>
+        <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
+        <li><a href="accademia.html" data-i18n="nav.accademia">Accademia</a></li>
+        <li><a href="eventi.html" data-i18n="nav.eventi">Eventi Futuri</a></li>
+        <li><a href="contatti.html" data-i18n="nav.contatti">Contatti</a></li>
+      </ul>
+      <div class="lang-toggle">
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="nav-toggle" aria-label="Apri menu">&#9776;</button>
+    </div>
   </div>
 </header>
+
 
 <div class="tricolor-bar"></div>
 
@@ -38,15 +45,15 @@
     </div>
     <div class="cinema-vignette"></div>
     <div class="cinema-text">
-      <span class="hero-eyebrow">&#9835; BEDIZZOLE (BS) &middot; DAL CUORE DELLA COMUNITÀ</span>
-      <h1>Una banda, un sound.</h1>
-      <p class="lead">Siamo la Bedizzole Marching Band: sfilate, spettacoli e prove ogni settimana. Che tu non abbia mai toccato uno strumento o suoni già da anni, qui c'è un posto per te.</p>
+      <span class="hero-eyebrow" data-i18n="hero.eyebrow">&#9835; BEDIZZOLE (BS) &middot; DAL CUORE DELLA COMUNITÀ</span>
+      <h1 data-i18n="hero.h1">Una banda, un sound.</h1>
+      <p class="lead" data-i18n="hero.lead">Siamo la Bedizzole Marching Band: sfilate, spettacoli e prove ogni settimana. Che tu non abbia mai toccato uno strumento o suoni già da anni, qui c'è un posto per te.</p>
       <div class="hero-ctas">
-        <a href="accademia.html" class="btn btn-primary">Voglio iniziare a suonare</a>
-        <a href="#prove" class="btn btn-outline">Suono già, voglio provare con voi</a>
+        <a href="accademia.html" class="btn btn-primary" data-i18n="hero.cta1">Voglio iniziare a suonare</a>
+        <a href="#prove" class="btn btn-outline" data-i18n="hero.cta2">Suono già, voglio provare con voi</a>
       </div>
     </div>
-    <div class="cinema-scrollcue"><span></span>Scorri</div>
+    <div class="cinema-scrollcue"><span class="pulse-bar"></span><span data-i18n="hero.scroll">Scorri</span></div>
   </div>
 </section>
 <div class="cinema-black-bridge"></div>
@@ -55,13 +62,13 @@
 <div class="rehearsal-banner" id="prove">
   <div class="container rehearsal-inner">
     <div class="rehearsal-text">
-      <span class="badge">Prove generali</span>
+      <span class="badge" data-i18n="rehearsal.badge">Prove generali</span>
       <div>
-        <strong>Ogni giovedì &middot; 20:45 &ndash; 22:30</strong>
-        <small>Sede: Via Monte Grappa, 21 &ndash; Bedizzole (BS) &middot; tutti i musicisti sono benvenuti</small>
+        <strong data-i18n="rehearsal.time">Ogni giovedì &middot; 20:45 &ndash; 22:30</strong>
+        <small data-i18n="rehearsal.location">Sede: Via Monte Grappa, 21 &ndash; Bedizzole (BS) &middot; tutti i musicisti sono benvenuti</small>
       </div>
     </div>
-    <a href="contatti.html" class="btn btn-gold">Vieni a trovarci</a>
+    <a href="contatti.html" class="btn btn-gold" data-i18n="rehearsal.cta">Vieni a trovarci</a>
   </div>
 </div>
 
@@ -69,32 +76,32 @@
 <section>
   <div class="container">
     <div class="section-head reveal">
-      <span class="kicker">Da dove parti?</span>
-      <h2>Un percorso per ogni musicista</h2>
-      <p>Che tu sia alle prime note o suoni già in banda da anni, la Bedizzole Marching Band ha un ingresso pensato per te.</p>
+      <span class="kicker" data-i18n="paths.kicker">Da dove parti?</span>
+      <h2 data-i18n="paths.h2">Un percorso per ogni musicista</h2>
+      <p data-i18n="paths.lead">Che tu sia alle prime note o suoni già in banda da anni, la Bedizzole Marching Band ha un ingresso pensato per te.</p>
     </div>
     <div class="paths">
       <div class="path-card reveal">
-        <span class="tag">Nuovi musicisti</span>
-        <h3>Non hai mai suonato? Iniziamo insieme.</h3>
-        <p>La nostra Accademia accompagna chi parte da zero: lezioni di strumento, teoria e marcia, in un gruppo che diventa presto una seconda famiglia.</p>
+        <span class="tag" data-i18n="path1.tag">Nuovi musicisti</span>
+        <h3 data-i18n="path1.h3">Non hai mai suonato? Iniziamo insieme.</h3>
+        <p data-i18n="path1.p">La nostra Accademia accompagna chi parte da zero: lezioni di strumento, teoria e marcia, in un gruppo che diventa presto una seconda famiglia.</p>
         <ul>
-          <li>Nessuna esperienza richiesta</li>
-          <li>Strumenti e percorso guidato</li>
-          <li>Ingresso in banda quando sei pronto</li>
+          <li data-i18n="path1.li1">Nessuna esperienza richiesta</li>
+          <li data-i18n="path1.li2">Strumenti e percorso guidato</li>
+          <li data-i18n="path1.li3">Ingresso in banda quando sei pronto</li>
         </ul>
-        <a href="accademia.html" class="btn btn-primary">Scopri l'Accademia</a>
+        <a href="accademia.html" class="btn btn-primary" data-i18n="path1.cta">Scopri l'Accademia</a>
       </div>
       <div class="path-card reveal">
-        <span class="tag">Musicisti già formati</span>
-        <h3>Suoni già? Vieni a fare una prova.</h3>
-        <p>Se hai già esperienza con uno strumento (anche fuori dal marching), ti aspettiamo a una prova generale per conoscerci dal vivo.</p>
+        <span class="tag" data-i18n="path2.tag">Musicisti già formati</span>
+        <h3 data-i18n="path2.h3">Suoni già? Vieni a fare una prova.</h3>
+        <p data-i18n="path2.p">Se hai già esperienza con uno strumento (anche fuori dal marching), ti aspettiamo a una prova generale per conoscerci dal vivo.</p>
         <ul>
-          <li>Prove ogni giovedì, 20:45&ndash;22:30</li>
-          <li>Repertorio e formazione in continuo aggiornamento</li>
-          <li>Sfilate, concorsi ed eventi durante l'anno</li>
+          <li data-i18n="path2.li1">Prove ogni giovedì, 20:45&ndash;22:30</li>
+          <li data-i18n="path2.li2">Repertorio e formazione in continuo aggiornamento</li>
+          <li data-i18n="path2.li3">Sfilate, concorsi ed eventi durante l'anno</li>
         </ul>
-        <a href="contatti.html" class="btn btn-primary">Contattaci per una prova</a>
+        <a href="contatti.html" class="btn btn-primary" data-i18n="path2.cta">Contattaci per una prova</a>
       </div>
     </div>
   </div>
@@ -104,40 +111,40 @@
 <section style="background:#f2f1ec;">
   <div class="container">
     <div class="section-head reveal">
-      <span class="kicker">Esplora</span>
-      <h2>Chi siamo, da dove veniamo, dove ci trovi</h2>
+      <span class="kicker" data-i18n="quicklinks.kicker">Esplora</span>
+      <h2 data-i18n="quicklinks.h2">Chi siamo, da dove veniamo, dove ci trovi</h2>
     </div>
     <div class="grid-cards">
       <a href="chi-siamo.html" class="info-card reveal">
-        <div class="thumb" style="background-image:url('img/foto-2.jpeg')"></div>
+        <div class="thumb" style="background-image:url('img/band-ritratto-bn.jpg')"></div>
         <div class="body">
-          <h4>Chi Siamo</h4>
-          <p>Persone, strumenti e valori dietro alla divisa BMB.</p>
-          <span class="go">Scopri di più &rarr;</span>
+          <h4 data-i18n="card.chisiamo.title">Chi Siamo</h4>
+          <p data-i18n="card.chisiamo.desc">Persone, strumenti e valori dietro alla divisa BMB.</p>
+          <span class="go" data-i18n="card.go1">Scopri di più &rarr;</span>
         </div>
       </a>
       <a href="storia.html" class="info-card reveal">
-        <div class="thumb" style="background-image:url('img/hero-parata.jpeg')"></div>
+        <div class="thumb" style="background-image:url('img/band-comune-esibizione.jpg')"></div>
         <div class="body">
-          <h4>Storia</h4>
-          <p>Il percorso della banda nel tempo, tappa dopo tappa.</p>
-          <span class="go">Leggi la storia &rarr;</span>
+          <h4 data-i18n="card.storia.title">Storia</h4>
+          <p data-i18n="card.storia.desc">Il percorso della banda nel tempo, tappa dopo tappa.</p>
+          <span class="go" data-i18n="card.go2">Leggi la storia &rarr;</span>
         </div>
       </a>
       <a href="eventi.html" class="info-card reveal">
-        <div class="thumb" style="background-image:url('img/foto-3.jpeg')"></div>
+        <div class="thumb" style="background-image:url('img/colorguard-bandiere-1.jpg')"></div>
         <div class="body">
-          <h4>Eventi Futuri</h4>
-          <p>Prossima tappa: Brescia centro, 12 settembre.</p>
-          <span class="go">Vedi il calendario &rarr;</span>
+          <h4 data-i18n="card.eventi.title">Eventi Futuri</h4>
+          <p data-i18n="card.eventi.desc">Prossima tappa: Brescia centro, 12 settembre.</p>
+          <span class="go" data-i18n="card.go3">Vedi il calendario &rarr;</span>
         </div>
       </a>
       <a href="accademia.html" class="info-card reveal">
-        <div class="thumb" style="background-image:url('img/foto-4.jpeg')"></div>
+        <div class="thumb" style="background-image:url('img/band-ottoni-formazione.jpg')"></div>
         <div class="body">
-          <h4>Accademia</h4>
-          <p>Il percorso per chi vuole imparare a suonare da zero.</p>
-          <span class="go">Come funziona &rarr;</span>
+          <h4 data-i18n="card.accademia.title">Accademia</h4>
+          <p data-i18n="card.accademia.desc">Il percorso per chi vuole imparare a suonare da zero.</p>
+          <span class="go" data-i18n="card.go4">Come funziona &rarr;</span>
         </div>
       </a>
     </div>
@@ -148,15 +155,15 @@
 <section style="padding-top:0;">
   <div class="container">
     <div class="section-head reveal">
-      <span class="kicker">Sul campo</span>
-      <h2>Gli ultimi scatti dalle sfilate</h2>
+      <span class="kicker" data-i18n="gallery.kicker">Sul campo</span>
+      <h2 data-i18n="gallery.h2">Gli ultimi scatti dalle sfilate</h2>
     </div>
   </div>
   <div class="gallery-strip reveal">
-    <img src="img/hero-parata.jpeg" alt="Sfilata BMB in piazza">
-    <img src="img/foto-2.jpeg" alt="Musicisti BMB in sfilata">
-    <img src="img/foto-3.jpeg" alt="Sezione ottoni BMB in sfilata">
-    <img src="img/foto-4.jpeg" alt="Corpo bandistico BMB al completo">
+    <img src="img/band-comune-esibizione.jpg" alt="BMB in esibizione davanti al Comune di Bedizzole">
+    <img src="img/colorguard-bandiere-2.jpg" alt="Color guard BMB con le bandiere in sfilata">
+    <img src="img/band-ottoni-corteo.jpg" alt="Sezione ottoni BMB in corteo">
+    <img src="img/band-ritratto-bn.jpg" alt="Ritratto in bianco e nero della formazione BMB">
   </div>
 </section>
 
@@ -168,32 +175,32 @@
           <img src="img/logo.png" alt="Logo BMB">
           <span>Bedizzole Marching Band</span>
         </div>
-        <p class="footer-motto">Una banda, un sound.</p>
-        <p>Sfiliamo per la nostra comunità dal cuore di Bedizzole (BS). Musica, disciplina e divertimento per ogni età.</p>
+        <p class="footer-motto" data-i18n="hero.h1">Una banda, un sound.</p>
+        <p data-i18n="footer.tagline">Sfiliamo per la nostra comunità dal cuore di Bedizzole (BS). Musica, disciplina e divertimento per ogni età.</p>
       </div>
       <div>
-        <h5>Naviga</h5>
+        <h5 data-i18n="footer.navigate">Naviga</h5>
         <ul>
-          <li><a href="chi-siamo.html">Chi Siamo</a></li>
-          <li><a href="storia.html">Storia</a></li>
-          <li><a href="accademia.html">Accademia</a></li>
-          <li><a href="eventi.html">Eventi Futuri</a></li>
-          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="chi-siamo.html" data-i18n="nav.chisiamo">Chi Siamo</a></li>
+          <li><a href="storia.html" data-i18n="nav.storia">Storia</a></li>
+          <li><a href="accademia.html" data-i18n="nav.accademia">Accademia</a></li>
+          <li><a href="eventi.html" data-i18n="nav.eventi">Eventi Futuri</a></li>
+          <li><a href="contatti.html" data-i18n="nav.contatti">Contatti</a></li>
         </ul>
       </div>
       <div>
-        <h5>Contatti</h5>
-        <ul>
-          <li><a href="mailto:bedizzolemarchingband.bmb@gmail.com">bedizzolemarchingband.bmb@gmail.com</a></li>
-          <li><a href="https://www.facebook.com/bedizzolemarchingband" target="_blank" rel="noopener">Facebook</a></li>
-          <li><a href="https://instagram.com/bedizzolemarchingband" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/c/BedizzoleMarchingBand" target="_blank" rel="noopener">YouTube</a></li>
-        </ul>
+        <h5 data-i18n="footer.contacts">Contatti</h5>
+        <p style="margin:0 0 14px;"><a href="mailto:bedizzolemarchingband.bmb@gmail.com">bedizzolemarchingband.bmb@gmail.com</a></p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/bedizzolemarchingband" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12.06C22 6.48 17.52 2 12 2S2 6.48 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94Z"/></svg></a>
+          <a href="https://instagram.com/bedizzolemarchingband" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c-2.72 0-3.06.01-4.12.06-1.06.05-1.79.22-2.43.47-.66.26-1.22.6-1.77 1.16-.56.55-.9 1.11-1.16 1.77-.25.64-.42 1.37-.47 2.43C2 8.94 2 9.28 2 12s.01 3.06.06 4.12c.05 1.06.22 1.79.47 2.43.26.66.6 1.22 1.16 1.77.55.56 1.11.9 1.77 1.16.64.25 1.37.42 2.43.47C8.94 22 9.28 22 12 22s3.06-.01 4.12-.06c1.06-.05 1.79-.22 2.43-.47.66-.26 1.22-.6 1.77-1.16.56-.55.9-1.11 1.16-1.77.25-.64.42-1.37.47-2.43.05-1.06.06-1.4.06-4.12s-.01-3.06-.06-4.12c-.05-1.06-.22-1.79-.47-2.43a4.9 4.9 0 0 0-1.16-1.77 4.9 4.9 0 0 0-1.77-1.16c-.64-.25-1.37-.42-2.43-.47C15.06 2.01 14.72 2 12 2Zm0 1.8c2.67 0 2.99.01 4.04.06.98.04 1.51.21 1.86.34.47.18.8.4 1.15.75.35.35.57.68.75 1.15.13.35.3.88.34 1.86.05 1.05.06 1.37.06 4.04s-.01 2.99-.06 4.04c-.04.98-.21 1.51-.34 1.86-.18.47-.4.8-.75 1.15-.35.35-.68.57-1.15.75-.35.13-.88.3-1.86.34-1.05.05-1.37.06-4.04.06s-2.99-.01-4.04-.06c-.98-.04-1.51-.21-1.86-.34a3.1 3.1 0 0 1-1.15-.75 3.1 3.1 0 0 1-.75-1.15c-.13-.35-.3-.88-.34-1.86-.05-1.05-.06-1.37-.06-4.04s.01-2.99.06-4.04c.04-.98.21-1.51.34-1.86.18-.47.4-.8.75-1.15.35-.35.68-.57 1.15-.75.35-.13.88-.3 1.86-.34 1.05-.05 1.37-.06 4.04-.06Zm0 3.06a5.14 5.14 0 1 0 0 10.28 5.14 5.14 0 0 0 0-10.28Zm0 8.48a3.34 3.34 0 1 1 0-6.68 3.34 3.34 0 0 1 0 6.68Zm5.34-8.68a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0Z"/></svg></a>
+          <a href="https://www.youtube.com/c/BedizzoleMarchingBand" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.95 1.97C5.12 19.5 12 19.5 12 19.5s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33ZM9.75 15.02V8.48l5.75 3.27-5.75 3.27Z"/></svg></a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; <span id="year"></span> Bedizzole Marching Band. Tutti i diritti riservati.</span>
-      <span>Sito in costruzione &mdash; bozza di lavoro</span>
+      <span>&copy; <span id="year"></span> Bedizzole Marching Band. <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
+      <span data-i18n="footer.construction">Sito in costruzione &mdash; bozza di lavoro</span>
     </div>
   </div>
 </footer>
@@ -201,6 +208,7 @@
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/cinema.js"></script>
 <script src="js/main.js"></script>
 </body>

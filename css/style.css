@@ -69,6 +69,14 @@ img { max-width: 100%; display: block; }
   padding: 12px 24px;
   gap: 20px;
 }
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+@media (max-width: 860px) {
+  .nav-right { gap: 12px; }
+}
 
 .brand {
   display: flex;
@@ -105,6 +113,28 @@ img { max-width: 100%; display: block; }
 }
 .nav-links a:hover,
 .nav-links a.active { border-color: var(--bmb-green-light); color: var(--bmb-green-light); }
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+.lang-toggle button {
+  background: none;
+  border: 1px solid rgba(248,248,246,0.3);
+  color: rgba(248,248,246,0.65);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  padding: 6px 11px;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+.lang-toggle button:first-child { border-radius: 999px 0 0 999px; }
+.lang-toggle button:last-child { border-radius: 0 999px 999px 0; border-left: none; }
+.lang-toggle button.active { background: var(--bmb-green); border-color: var(--bmb-green); color: var(--bmb-white); }
+.lang-toggle button:not(.active):hover { color: var(--bmb-white); border-color: rgba(248,248,246,0.6); }
 
 .nav-toggle {
   display: none;
@@ -273,7 +303,7 @@ img { max-width: 100%; display: block; }
   gap: 8px;
   will-change: opacity;
 }
-.cinema-scrollcue span {
+.cinema-scrollcue .pulse-bar {
   width: 1px; height: 34px;
   background: linear-gradient(var(--bmb-white), transparent);
   animation: cinemaPulse 1.7s ease-in-out infinite;
@@ -452,19 +482,44 @@ footer a:hover { color: var(--bmb-green-light); }
 }
 .placeholder-note { color: var(--bmb-gold); }
 
+/* ---------- Social icons ---------- */
+.social-links { display: flex; gap: 12px; margin-top: 4px; }
+.social-links a {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(248,248,246,0.08);
+  color: var(--bmb-white);
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+.social-links a:hover { background: var(--bmb-green); transform: translateY(-2px); }
+.social-links svg { width: 18px; height: 18px; fill: currentColor; }
+
+.tag-pills .social-pill { display: inline-flex; align-items: center; gap: 8px; }
+.tag-pills .social-pill svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+
 /* ---------- Placeholder / inner pages ---------- */
 .page-hero {
-  background: var(--bmb-black);
+  position: relative;
+  background: var(--bmb-black) center 30%/cover no-repeat;
   color: var(--bmb-white);
-  padding: 70px 0 54px;
+  padding: 90px 0 64px;
+  overflow: hidden;
 }
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(15,16,15,0.92) 0%, rgba(15,16,15,0.75) 45%, rgba(15,16,15,0.5) 100%);
+}
+.page-hero .container { position: relative; z-index: 1; }
 .page-hero .kicker {
   font-family: 'Oswald', sans-serif;
   color: var(--bmb-green-light);
   letter-spacing: 0.18em;
   font-size: 0.82rem;
 }
-.page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-top: 10px; }
+.page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-top: 10px; max-width: 760px; }
 
 .construction-box {
   border: 1px dashed #c9c8c2;
