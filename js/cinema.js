@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const cue = heroSection.querySelector('.cinema-scrollcue');
 
   // Bell anchor point, as % of the image box (see cinema-image object-position).
-  const BELL_X = '25%';
-  const BELL_Y = '34%';
+  const BELL_X = '24%';
+  const BELL_Y = '23%';
 
   gsap.set(imageWrap, { transformOrigin: `${BELL_X} ${BELL_Y}`, scale: 1, rotateY: 0, force3D: true });
   gsap.set(iris, { clipPath: `circle(0% at ${BELL_X} ${BELL_Y})` });
