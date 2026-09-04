@@ -1,0 +1,6 @@
+# Claude Code tooling (skills, vendor reference clone) - not site source
+.claude/
+
+# OS junk
+Thumbs.db
+.DS_Store

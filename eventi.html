@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventi Futuri | Bedizzole Marching Band</title>
+<link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <img src="img/logo.png" alt="Logo Bedizzole Marching Band">
+      <span class="brand-name">BEDIZZOLE<br><span>MARCHING BAND</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Apri menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="chi-siamo.html">Chi Siamo</a></li>
+      <li><a href="storia.html">Storia</a></li>
+      <li><a href="accademia.html">Accademia</a></li>
+      <li><a href="eventi.html">Eventi Futuri</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+    </ul>
+  </div>
+</header>
+<div class="tricolor-bar"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="kicker">Eventi futuri</span>
+    <h1>Dove ci trovi nei prossimi mesi</h1>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="event-list">
+      <div class="event-card reveal">
+        <div class="event-date"><div class="day">12</div><div class="month">Set</div></div>
+        <div class="event-info">
+          <h3>Parata a Brescia centro</h3>
+          <p class="loc">📍 Brescia (BS)</p>
+        </div>
+        <span class="event-tag">Oktoberfest</span>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-date"><div class="day">13</div><div class="month">Set</div></div>
+        <div class="event-info">
+          <h3>Esibizione al Padiglione Oktoberfest</h3>
+          <p class="loc">📍 San Polo, Brescia (BS)</p>
+        </div>
+        <span class="event-tag">Oktoberfest</span>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-date"><div class="day">20</div><div class="month">Set</div></div>
+        <div class="event-info">
+          <h3>Sfilata a Foresto Sparso</h3>
+          <p class="loc">📍 Foresto Sparso (BG)</p>
+        </div>
+        <span class="event-tag">Sfilata</span>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-date"><div class="day">27</div><div class="month">Set</div></div>
+        <div class="event-info">
+          <h3>Festa dell'Uva</h3>
+          <p class="loc">📍 Gussago (BS)</p>
+        </div>
+        <span class="event-tag">Festa paesana</span>
+      </div>
+      <div class="event-card reveal">
+        <div class="event-date"><div class="day">4</div><div class="month">Nov</div></div>
+        <div class="event-info">
+          <h3>Festa del Torrone</h3>
+          <p class="loc">📍 Cremona</p>
+        </div>
+        <span class="event-tag">Festa paesana</span>
+      </div>
+    </div>
+    <p class="source-note">Nota per Marco: la data della Festa del Torrone di Cremona l'ho letta come "4 novembre" — confermamela perché il messaggio vocale era ambiguo (l'evento reale a Cremona dura più giorni, di solito a metà/fine novembre). Aggiungo volentieri orari di ritrovo e altri dettagli quando li hai.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="img/logo.png" alt="Logo BMB">
+          <span>Bedizzole Marching Band</span>
+        </div>
+        <p class="footer-motto">Una banda, un sound.</p>
+        <p>Sfiliamo per la nostra comunità dal cuore di Bedizzole (BS). Musica, disciplina e divertimento per ogni età.</p>
+      </div>
+      <div>
+        <h5>Naviga</h5>
+        <ul>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="storia.html">Storia</a></li>
+          <li><a href="accademia.html">Accademia</a></li>
+          <li><a href="eventi.html">Eventi Futuri</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contatti</h5>
+        <ul>
+          <li><a href="mailto:bedizzolemarchingband.bmb@gmail.com">bedizzolemarchingband.bmb@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/bedizzolemarchingband" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://instagram.com/bedizzolemarchingband" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.youtube.com/c/BedizzoleMarchingBand" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Bedizzole Marching Band. Tutti i diritti riservati.</span>
+      <span>Sito in costruzione &mdash; bozza di lavoro</span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/main.js"></script>
+</body>
+</html>
