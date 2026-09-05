@@ -110,6 +110,8 @@
       'storia.y5b.p': 'Domenica 28 giugno 2026 la banda festeggia i suoi 20 anni con una giornata in due tappe: al mattino sfilata, messa solenne e spettacolo a Bedizzole, al pomeriggio una grande parata di circa 3 km nel centro storico di Brescia, da Piazzale Arnaldo a Piazza Vittoria. Insieme alla Bedizzole Marching Band sfilano altre sei formazioni da tutta Italia: Brianza Parade Band, Academy Parade Band, General Vincent Marching Band, Millennium Drum and Bugle Corps, Mosson Marching Band e Red in Black Marching Band.',
       'storia.y5.h3': '47 componenti e un’Accademia che cresce',
       'storia.y5.p': 'La Bedizzole Marching Band conta oggi 37 musicisti, 5 elementi di color guard, il maestro e 4 membri di staff, affiancati dai giovani allievi dell’Accademia che si preparano a entrare stabilmente in formazione.',
+      'storia.video.label': 'Video del Ventesimo',
+      'storia.video.sub': 'In arrivo su YouTube',
       'storia.note': 'Nota: contenuti ricostruiti a partire dal sito attuale <a href="https://www.bedizzolemarchingband.it" target="_blank" rel="noopener">bedizzolemarchingband.it</a> — da rivedere e integrare insieme con eventuali correzioni o aggiunte.',
 
       // ---- eventi.html ----
@@ -273,6 +275,8 @@
       'storia.y5b.p': 'On Sunday, June 28, 2026 the band celebrated its 20th anniversary with a two-part day: a morning parade, solemn mass and show in Bedizzole, followed by a large afternoon parade of about 3 km through Brescia\'s historic centre, from Piazzale Arnaldo to Piazza Vittoria. Alongside the Bedizzole Marching Band, six other formations from across Italy took part: Brianza Parade Band, Academy Parade Band, General Vincent Marching Band, Millennium Drum and Bugle Corps, Mosson Marching Band and Red in Black Marching Band.',
       'storia.y5.h3': '47 members and a growing Academy',
       'storia.y5.p': 'The Bedizzole Marching Band today counts 37 musicians, 5 color guard members, the music director and 4 staff members, alongside the young Academy students preparing to join the line-up.',
+      'storia.video.label': '20th Anniversary Video',
+      'storia.video.sub': 'Coming soon on YouTube',
       'storia.note': 'Note: content reconstructed from the current site <a href="https://www.bedizzolemarchingband.it" target="_blank" rel="noopener">bedizzolemarchingband.it</a> — to be reviewed and expanded together with any corrections or additions.',
 
       'eventi.kicker': 'Upcoming events',
