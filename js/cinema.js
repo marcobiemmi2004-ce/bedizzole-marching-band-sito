@@ -31,25 +31,25 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentST = null;
 
   ScrollTrigger.matchMedia({
-    // Desktop / tablet: full cinematic range.
+    // Desktop / tablet: shorter, smoother cinematic range.
     '(min-width: 761px)': function () {
-      buildTimeline({ maxScale: 9, tilt: -7, distance: '+=3200' });
+      buildTimeline({ maxScale: 9, tilt: -7, distance: '+=2100' });
     },
-    // Mobile: shorter, lighter scale range for smoothness on weaker GPUs.
+    // Mobile: shorter still, lighter scale range for smoothness on weaker GPUs.
     '(max-width: 760px)': function () {
-      buildTimeline({ maxScale: 5.2, tilt: -4, distance: '+=1900' });
+      buildTimeline({ maxScale: 5.2, tilt: -4, distance: '+=1250' });
     },
   });
 
   function buildTimeline({ maxScale, tilt, distance }) {
     const tl = gsap.timeline({
-      defaults: { ease: 'none' },
+      defaults: { ease: 'sine.inOut' },
       scrollTrigger: {
         id: 'cinemaHero',
         trigger: heroSection,
         start: 'top top',
         end: distance,
-        scrub: 0.65,
+        scrub: 1.1,
         pin: pin,
         anticipatePin: 1,
         // markers: true,
@@ -57,16 +57,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     currentST = tl.scrollTrigger;
 
-    tl.to(text, { opacity: 0, y: -26, duration: 0.13, ease: 'power1.out' }, 0)
-      .to(cue, { opacity: 0, duration: 0.08 }, 0)
+    tl.to(text, { opacity: 0, y: -26, duration: 0.18, ease: 'sine.out' }, 0)
+      .to(cue, { opacity: 0, duration: 0.12 }, 0)
       // Phase 1: camera begins to arc + drift closer (subtle 3D tilt, not a literal turn).
-      .to(imageWrap, { scale: maxScale * 0.3, rotateY: tilt, duration: 0.38, ease: 'power1.inOut' }, 0.06)
-      // Phase 2: dolly accelerates toward the bell, tilt settles back to face-on.
-      .to(imageWrap, { scale: maxScale, rotateY: 0, duration: 0.46, ease: 'power2.in' }, 0.42)
-      // Vignette darkens as we close in.
-      .to(vignette, { opacity: 1, duration: 0.5, ease: 'power1.in' }, 0.28)
-      // Iris: the bell's dark interior expands to swallow the whole frame.
-      .to(iris, { clipPath: `circle(150% at ${BELL_X} ${BELL_Y})`, duration: 0.5, ease: 'power2.in' }, 0.46);
+      .to(imageWrap, { scale: maxScale * 0.32, rotateY: tilt, duration: 0.46, ease: 'sine.inOut' }, 0.04)
+      // Phase 2: dolly glides toward the bell, tilt settles back to face-on — long overlap with phase 1 so the motion never snaps.
+      .to(imageWrap, { scale: maxScale, rotateY: 0, duration: 0.62, ease: 'sine.in' }, 0.36)
+      // Vignette darkens gradually as we close in.
+      .to(vignette, { opacity: 1, duration: 0.68, ease: 'sine.inOut' }, 0.2)
+      // Iris: the bell's dark interior expands to swallow the whole frame, blending in well before the dolly ends.
+      .to(iris, { clipPath: `circle(150% at ${BELL_X} ${BELL_Y})`, duration: 0.64, ease: 'sine.in' }, 0.38);
 
     return tl;
   }
