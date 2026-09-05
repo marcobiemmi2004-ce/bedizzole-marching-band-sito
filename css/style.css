@@ -436,6 +436,25 @@ section { padding: 88px 0; }
 .gallery-strip img { height: 220px; width: 100%; object-fit: cover; }
 @media (max-width: 760px) { .gallery-strip { grid-template-columns: repeat(2, 1fr); } }
 
+/* ---------- Book-us CTA banner ---------- */
+.book-cta {
+  position: relative;
+  background: #000 center 30%/cover no-repeat;
+  padding: 100px 0;
+  text-align: center;
+  color: var(--bmb-white);
+}
+.book-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,16,15,0.75) 0%, rgba(15,16,15,0.9) 100%);
+}
+.book-cta .container { position: relative; z-index: 1; max-width: 720px; }
+.book-cta .kicker { color: var(--bmb-gold); }
+.book-cta h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin: 12px 0 18px; }
+.book-cta p { color: rgba(248,248,246,0.85); font-size: 1.08rem; margin-bottom: 34px; }
+
 /* ---------- Footer ---------- */
 footer {
   background: var(--bmb-black);
