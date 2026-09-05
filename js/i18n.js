@@ -118,9 +118,11 @@
       'storia.y5b.p': 'Domenica 28 giugno 2026 la banda festeggia i suoi 20 anni con una giornata in due tappe: al mattino sfilata, messa solenne e spettacolo a Bedizzole, al pomeriggio una grande parata di circa 3 km nel centro storico di Brescia, da Piazzale Arnaldo a Piazza Vittoria. Insieme alla Bedizzole Marching Band sfilano altre sei formazioni da tutta Italia: Brianza Parade Band, Academy Parade Band, General Vincent Marching Band, Millennium Drum and Bugle Corps, Mosson Marching Band e Red in Black Marching Band.',
       'storia.y5.h3': '47 componenti e un’Accademia che cresce',
       'storia.y5.p': 'La Bedizzole Marching Band conta oggi 37 musicisti, 5 elementi di color guard, il maestro e 4 membri di staff, affiancati dai giovani allievi dell’Accademia e della Junior Marching Band che si preparano a entrare stabilmente in formazione. L’obiettivo resta crescere musicalmente portando i propri show in Italia e all’estero: tra le trasferte già affrontate, Irlanda, Francia e Romania.',
+      'storia.y5c.h3': 'In Francia per la 133ª Fête de la Rosière',
+      'storia.y5c.p': 'Dal 28 al 31 agosto 2026 la banda vola a Vinay, in Francia, per la 133ª Fête de la Rosière: quattro giorni di festa in cui la Bedizzole Marching Band sfila insieme a formazioni internazionali da Croazia (Puhački orkestar Zaprešić), Polonia (Maestoso Wschowa) e Spagna (Banda de Gaitas Redegaita).',
       'storia.video.label': 'Video del Ventesimo',
       'storia.video.sub': 'In arrivo su YouTube',
-      'storia.note': 'Nota: contenuti ricostruiti a partire dal sito attuale <a href="https://www.bedizzolemarchingband.it" target="_blank" rel="noopener">bedizzolemarchingband.it</a> e da un documento "Storia Bedizzole Marching Band" condiviso da Marco — da rivedere e integrare insieme con eventuali correzioni o aggiunte. Nota: il documento citava anche una trasferta in Francia "nel prossimo agosto" (probabilmente agosto 2026) — se si è già svolta, dammi i dettagli e la aggiungo come tappa a sé.',
+      'storia.note': 'Nota: contenuti ricostruiti a partire dal sito attuale <a href="https://www.bedizzolemarchingband.it" target="_blank" rel="noopener">bedizzolemarchingband.it</a>, da un documento "Storia Bedizzole Marching Band" condiviso da Marco e dal sito ufficiale della <a href="https://www.cdfvinay.fr/" target="_blank" rel="noopener">Fête de la Rosière di Vinay</a> — da rivedere e integrare insieme con eventuali correzioni o aggiunte.',
 
       // ---- eventi.html ----
       'eventi.kicker': 'Eventi futuri',
@@ -291,9 +293,11 @@
       'storia.y5b.p': 'On Sunday, June 28, 2026 the band celebrated its 20th anniversary with a two-part day: a morning parade, solemn mass and show in Bedizzole, followed by a large afternoon parade of about 3 km through Brescia\'s historic centre, from Piazzale Arnaldo to Piazza Vittoria. Alongside the Bedizzole Marching Band, six other formations from across Italy took part: Brianza Parade Band, Academy Parade Band, General Vincent Marching Band, Millennium Drum and Bugle Corps, Mosson Marching Band and Red in Black Marching Band.',
       'storia.y5.h3': '47 members and a growing Academy',
       'storia.y5.p': 'The Bedizzole Marching Band today counts 37 musicians, 5 color guard members, the music director and 4 staff members, alongside the young students of the Academy and the Junior Marching Band preparing to join the line-up. The goal remains to keep growing musically, bringing the band\'s shows across Italy and abroad: trips already taken include Ireland, France and Romania.',
+      'storia.y5c.h3': 'To France for the 133rd Fête de la Rosière',
+      'storia.y5c.p': 'From August 28 to 31, 2026, the band flies to Vinay, France, for the 133rd Fête de la Rosière: four days of celebration in which the Bedizzole Marching Band parades alongside international formations from Croatia (Puhački orkestar Zaprešić), Poland (Maestoso Wschowa) and Spain (Banda de Gaitas Redegaita).',
       'storia.video.label': '20th Anniversary Video',
       'storia.video.sub': 'Coming soon on YouTube',
-      'storia.note': 'Note: content reconstructed from the current site <a href="https://www.bedizzolemarchingband.it" target="_blank" rel="noopener">bedizzolemarchingband.it</a> and from a "Bedizzole Marching Band History" document shared by Marco — to be reviewed and expanded together with any corrections or additions. Note: the document also mentioned a trip to France "next August" (likely August 2026) — if it already took place, send me the details and I\'ll add it as its own milestone.',
+      'storia.note': 'Note: content reconstructed from the current site <a href="https://www.bedizzolemarchingband.it" target="_blank" rel="noopener">bedizzolemarchingband.it</a>, from a "Bedizzole Marching Band History" document shared by Marco, and from the official site of the <a href="https://www.cdfvinay.fr/" target="_blank" rel="noopener">Fête de la Rosière in Vinay</a> — to be reviewed and expanded together with any corrections or additions.',
 
       'eventi.kicker': 'Upcoming events',
       'eventi.h1': 'Where to find us in the coming months',
