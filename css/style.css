@@ -303,14 +303,16 @@ img { max-width: 100%; display: block; }
   gap: 8px;
   will-change: opacity;
 }
-.cinema-scrollcue .pulse-bar {
-  width: 1px; height: 34px;
-  background: linear-gradient(var(--bmb-white), transparent);
-  animation: cinemaPulse 1.7s ease-in-out infinite;
+.cinema-scrollcue .scroll-arrow {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1;
+  letter-spacing: 0;
+  animation: cinemaBounce 1.7s ease-in-out infinite;
 }
-@keyframes cinemaPulse {
-  0%, 100% { opacity: 0.25; transform: scaleY(0.55); }
-  50% { opacity: 1; transform: scaleY(1); }
+@keyframes cinemaBounce {
+  0%, 100% { opacity: 0.35; transform: translateY(-2px); }
+  50% { opacity: 1; transform: translateY(5px); }
 }
 .cinema-black-bridge { height: 14vh; background: #000; }
 
