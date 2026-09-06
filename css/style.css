@@ -314,7 +314,10 @@ img { max-width: 100%; display: block; }
   0%, 100% { opacity: 0.35; transform: translateY(-2px); }
   50% { opacity: 1; transform: translateY(5px); }
 }
-.cinema-black-bridge { height: 14vh; background: #000; }
+.cinema-black-bridge {
+  height: 18vh;
+  background: linear-gradient(180deg, #000 0%, #000 30%, var(--bmb-white) 100%);
+}
 
 /* Static fallback: reduced motion or JS/GSAP unavailable */
 .cinema-hero.cinema-static .cinema-pin { height: 92vh; }
