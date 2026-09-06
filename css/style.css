@@ -591,6 +591,66 @@ footer a:hover { color: var(--bmb-green-light); }
 .roster-card .count { font-size: 0.78rem; color: #8a8d84; margin-bottom: 12px; display: block; }
 .roster-card p { color: #3a3d38; line-height: 1.7; margin: 0; }
 
+/* ---------- Trial-lesson sticker banner (Accademia) ---------- */
+.trial-banner {
+  position: relative;
+  background: var(--bmb-green);
+  color: var(--bmb-white);
+  border-radius: var(--radius);
+  padding: 36px 34px;
+  margin: 48px 0;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  transform: rotate(-1.2deg);
+  box-shadow: 0 14px 30px rgba(15, 61, 39, 0.22);
+}
+.trial-banner::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 2px dashed rgba(248, 248, 246, 0.4);
+  border-radius: calc(var(--radius) - 4px);
+  pointer-events: none;
+}
+.trial-banner .trial-note {
+  position: absolute;
+  top: -14px;
+  right: 28px;
+  background: var(--bmb-gold);
+  color: var(--bmb-black);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transform: rotate(4deg);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+.trial-banner .trial-emoji {
+  font-size: 2.6rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+.trial-banner .trial-text { flex: 1; min-width: 240px; }
+.trial-banner h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+.trial-banner p { color: rgba(248,248,246,0.88); margin: 0; font-size: 0.98rem; }
+.trial-banner .btn { flex-shrink: 0; }
+@media (max-width: 600px) {
+  .trial-banner { transform: rotate(0); padding: 28px 22px; }
+  .trial-banner .trial-note { right: 16px; }
+}
+
 /* ---------- Placeholder / inner pages ---------- */
 .page-hero {
   position: relative;
