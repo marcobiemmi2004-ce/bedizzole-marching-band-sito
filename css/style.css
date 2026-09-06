@@ -602,7 +602,7 @@ footer a:hover { color: var(--bmb-green-light); }
   color: var(--bmb-white);
   border-radius: var(--radius);
   padding: 36px 34px;
-  margin: 48px 0;
+  margin: 56px 0 68px;
   display: flex;
   align-items: center;
   gap: 26px;
