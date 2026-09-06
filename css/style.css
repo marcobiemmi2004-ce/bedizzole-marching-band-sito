@@ -686,6 +686,54 @@ footer a:hover { color: var(--bmb-green-light); }
 
 /* ---------- Events list ---------- */
 .event-list { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
+.year-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.year-pill {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding: 9px 20px;
+  border-radius: 999px;
+  border: 2px solid var(--bmb-black);
+  background: transparent;
+  color: var(--bmb-black);
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+.year-pill:hover { border-color: var(--bmb-green); color: var(--bmb-green); }
+.year-pill.active { background: var(--bmb-black); color: var(--bmb-white); border-color: var(--bmb-black); }
+.event-date.year-only { justify-content: center; }
+.event-date.year-only .day { font-size: 1.3rem; }
+
+/* ---------- Follow-us banner ---------- */
+.follow-banner {
+  background: var(--bmb-black);
+  color: var(--bmb-white);
+  border-radius: var(--radius);
+  padding: 34px 30px;
+  margin-top: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.follow-banner .ig-icon {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.follow-banner .ig-icon svg { width: 24px; height: 24px; fill: #fff; }
+.follow-banner .follow-text { display: flex; align-items: center; gap: 18px; flex: 1; min-width: 240px; }
+.follow-banner h3 { font-size: 1.2rem; margin-bottom: 4px; }
+.follow-banner p { color: rgba(248,248,246,0.78); font-size: 0.92rem; margin: 0; }
+
 .empty-events-note {
   text-align: center;
   padding: 48px 24px;
@@ -734,6 +782,23 @@ footer a:hover { color: var(--bmb-green-light); }
 @media (max-width: 600px) {
   .event-card { flex-wrap: wrap; }
   .event-tag { margin-left: 94px; }
+}
+
+/* ---------- Historic photo (timeline) ---------- */
+.timeline-photo {
+  margin: 16px 0 0;
+  max-width: 480px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid #e7e6e2;
+  background: #fff;
+}
+.timeline-photo img { width: 100%; display: block; }
+.timeline-photo figcaption {
+  font-size: 0.78rem;
+  color: #8a8d84;
+  font-style: italic;
+  padding: 10px 14px;
 }
 
 /* ---------- Video placeholder (timeline) ---------- */
