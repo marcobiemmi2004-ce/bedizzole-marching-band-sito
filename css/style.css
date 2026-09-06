@@ -357,6 +357,33 @@ img { max-width: 100%; display: block; }
 .rehearsal-text strong { font-family: 'Oswald', sans-serif; font-size: 1.1rem; letter-spacing: 0.02em; }
 .rehearsal-text small { display: block; color: rgba(248,248,246,0.75); margin-top: 2px; }
 
+/* ---------- Rehearsal info inside a path-card ---------- */
+.path-rehearsal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  background: rgba(248,248,246,0.08);
+  border: 1px solid rgba(248,248,246,0.15);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 26px;
+}
+.path-rehearsal .badge {
+  background: var(--bmb-gold);
+  color: var(--bmb-black);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+.path-rehearsal strong { display: block; font-family: 'Oswald', sans-serif; font-size: 1rem; letter-spacing: 0.02em; }
+.path-rehearsal small { display: block; color: rgba(248,248,246,0.7); margin-top: 2px; font-size: 0.82rem; }
+
 /* ---------- Sections ---------- */
 section { padding: 88px 0; }
 .section-head { max-width: 640px; margin-bottom: 48px; }
