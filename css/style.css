@@ -571,6 +571,26 @@ footer a:hover { color: var(--bmb-green-light); }
 .tag-pills .social-pill { display: inline-flex; align-items: center; gap: 8px; }
 .tag-pills .social-pill svg { width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
 
+/* ---------- Section roster (Chi Siamo) ---------- */
+.roster-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+@media (max-width: 760px) { .roster-grid { grid-template-columns: 1fr; } }
+.roster-card {
+  background: #fff;
+  border: 1px solid #e7e6e2;
+  border-radius: var(--radius);
+  padding: 24px 26px;
+}
+.roster-card h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bmb-green);
+  margin-bottom: 2px;
+}
+.roster-card .count { font-size: 0.78rem; color: #8a8d84; margin-bottom: 12px; display: block; }
+.roster-card p { color: #3a3d38; line-height: 1.7; margin: 0; }
+
 /* ---------- Placeholder / inner pages ---------- */
 .page-hero {
   position: relative;
