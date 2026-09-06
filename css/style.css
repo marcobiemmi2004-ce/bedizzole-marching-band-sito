@@ -315,14 +315,29 @@ img { max-width: 100%; display: block; }
   50% { opacity: 1; transform: translateY(5px); }
 }
 .cinema-black-bridge {
-  height: 32vh;
+  height: 34vh;
+  /* Smoothstep-eased grayscale ramp (zero slope at both ends) so it blends
+     into the solid black above and the page background below with no
+     visible seam or banding "step". */
   background: linear-gradient(180deg,
-    #000 0%,
-    #0a0a09 20%,
-    #2b2c29 40%,
-    #63645f 60%,
-    #a5a49d 78%,
-    #dedcd4 90%,
+    #000000 0%,
+    #050505 8%,
+    #0d0d0d 16%,
+    #1a1a1a 24%,
+    #292929 32%,
+    #393939 40%,
+    #4b4b4b 46%,
+    #5e5e5e 52%,
+    #717171 58%,
+    #848484 64%,
+    #979797 70%,
+    #a9a9a9 75%,
+    #bababa 80%,
+    #c9c9c9 84%,
+    #d7d7d7 88%,
+    #e3e3e3 91.5%,
+    #ececec 94.5%,
+    #f3f3f2 97%,
     var(--bmb-white) 100%);
 }
 
