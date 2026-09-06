@@ -839,6 +839,7 @@ footer a:hover { color: var(--bmb-green-light); }
   transition: transform .2s ease, box-shadow .2s ease;
 }
 .event-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(15,16,15,0.1); }
+.event-card[hidden] { display: none; }
 .event-date {
   flex: 0 0 78px;
   text-align: center;
