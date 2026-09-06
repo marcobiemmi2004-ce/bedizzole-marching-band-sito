@@ -181,7 +181,7 @@
       'contatti.direttivo.h2': 'Presidente e Vicepresidente',
       'contatti.social.kicker': 'Seguici',
       'contatti.social.h2': 'Social',
-      'contatti.note': 'Dati recuperati dalla pagina contatti del sito attuale <a href="https://www.bedizzolemarchingband.it/it/contatti/" target="_blank" rel="noopener">bedizzolemarchingband.it/it/contatti</a> (indirizzo sede legale, P.IVA 02880260985, CF 93000390174, recapiti di Presidente e Vicepresidente). Non risulta un account TikTok ufficiale — se esiste, mandami il link e lo aggiungo.',
+      'contatti.note': 'Dati recuperati dalla pagina contatti del sito attuale <a href="https://www.bedizzolemarchingband.it/it/contatti/" target="_blank" rel="noopener">bedizzolemarchingband.it/it/contatti</a> (indirizzo sede legale, P.IVA 02880260985, CF 93000390174, recapiti di Presidente e Vicepresidente).',
     },
     en: {
       'nav.chisiamo': 'About Us',
@@ -353,7 +353,7 @@
       'contatti.direttivo.h2': 'President and Vice President',
       'contatti.social.kicker': 'Follow us',
       'contatti.social.h2': 'Social',
-      'contatti.note': 'Details retrieved from the contact page of the current site <a href="https://www.bedizzolemarchingband.it/it/contatti/" target="_blank" rel="noopener">bedizzolemarchingband.it/it/contatti</a> (registered office address, VAT 02880260985, tax code 93000390174, President and Vice President contacts). No official TikTok account found — if one exists, send me the link and I’ll add it.',
+      'contatti.note': 'Details retrieved from the contact page of the current site <a href="https://www.bedizzolemarchingband.it/it/contatti/" target="_blank" rel="noopener">bedizzolemarchingband.it/it/contatti</a> (registered office address, VAT 02880260985, tax code 93000390174, President and Vice President contacts).',
     },
   };
 
