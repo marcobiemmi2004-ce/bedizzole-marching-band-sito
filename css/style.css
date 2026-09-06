@@ -590,6 +590,10 @@ footer a:hover { color: var(--bmb-green-light); }
 }
 .roster-card .count { font-size: 0.78rem; color: #8a8d84; margin-bottom: 12px; display: block; }
 .roster-card p { color: #3a3d38; line-height: 1.7; margin: 0; }
+.roster-grid-compact { grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.roster-grid-compact .roster-card { padding: 18px 20px; }
+.roster-grid-compact .roster-card .count { margin-bottom: 0; }
+@media (max-width: 760px) { .roster-grid-compact { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- Trial-lesson sticker banner (Accademia) ---------- */
 .trial-banner {

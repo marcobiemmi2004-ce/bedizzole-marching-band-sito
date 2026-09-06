@@ -99,7 +99,7 @@
       'sezione.6': 'Sousaphone',
       'sezione.7': 'Percussioni',
       'sezione.8': 'Color Guard',
-      'chisiamo.roster.note': 'Elenco ricostruito nome per nome dalla pagina <a href="https://www.bedizzolemarchingband.it/it/chi-siamo/" target="_blank" rel="noopener">Chi Siamo</a> del sito attuale: 38 musicisti + 5 color guard + 5 staff + il maestro Nicola Orsato = 49 componenti totali. Il sito dichiara genericamente "54 componenti" — se conosci le 5 persone mancanti dall\'elenco, dimmelo e le aggiungo.',
+      'chisiamo.roster.note': 'Nota: sezioni e numeri ricostruiti dalla pagina <a href="https://www.bedizzolemarchingband.it/it/chi-siamo/" target="_blank" rel="noopener">Chi Siamo</a> del sito attuale: 38 musicisti + 5 color guard + 5 staff + il maestro Nicola Orsato = 49 componenti totali. Il sito dichiara genericamente "54 componenti" — se mancano 5 persone dal conteggio, dimmelo e correggiamo insieme.',
 
       // ---- storia.html ----
       'storia.kicker': 'Storia',
@@ -332,7 +332,7 @@
       'sezione.6': 'Sousaphone',
       'sezione.7': 'Percussion',
       'sezione.8': 'Color Guard',
-      'chisiamo.roster.note': 'List rebuilt name by name from the <a href="https://www.bedizzolemarchingband.it/it/chi-siamo/" target="_blank" rel="noopener">Chi Siamo</a> page of the current site: 38 musicians + 5 color guard + 5 staff + music director Nicola Orsato = 49 total members. The site generically states "54 members" — if you know the 5 missing people, let me know and I\'ll add them.',
+      'chisiamo.roster.note': 'Note: sections and numbers rebuilt from the <a href="https://www.bedizzolemarchingband.it/it/chi-siamo/" target="_blank" rel="noopener">Chi Siamo</a> page of the current site: 38 musicians + 5 color guard + 5 staff + music director Nicola Orsato = 49 total members. The site generically states "54 members" — if 5 people are missing from the count, let me know and we\'ll fix it together.',
 
       'storia.kicker': 'History',
       'storia.h1': 'The journey of the Bedizzole Marching Band',
