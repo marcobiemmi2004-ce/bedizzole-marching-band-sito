@@ -243,7 +243,7 @@
       'media.divise.p': 'Dopo mesi di progettazione, il debutto del nuovo look della Marching Band: verde e nero restano il cuore dell\'identità, con linee più dinamiche pensate per il palco e per la strada.',
       'media.divise.thankstitle': 'Un grazie di cuore',
       'media.divise.thanks': 'Al Comune di Bedizzole per il supporto costante, alla nostra sarta di fiducia e a tutto lo staff di Confezioni Grazia per il lavoro prezioso e velocissimo, a Maps Sport Online per le stampe, e alla nostra fotografa di Meaning Design per questi scatti.',
-      'media.divise.note': 'Nota per Marco: le foto sono quelle pubblicate sul <a href="https://www.bedizzolemarchingband.it/it/senza-categoria/nuove-divise/" target="_blank" rel="noopener">sito ufficiale</a>, dove però l\'articolo risulta datato 3 marzo 2025 e non 30 dicembre 2024 — se la data corretta è quella che mi hai dato dimmelo pure, l\'ho già usata qui.',
+      'media.divise.note': 'Nota: foto raccolte dal <a href="https://www.bedizzolemarchingband.it/it/senza-categoria/nuove-divise/" target="_blank" rel="noopener">sito ufficiale</a> e dai due post Instagram del <a href="https://www.instagram.com/p/DEN70r5Ntin/" target="_blank" rel="noopener">30 dicembre 2024</a> (il primo annuncio) e dell\'<a href="https://www.instagram.com/p/DElC1GGtplP/" target="_blank" rel="noopener">8 gennaio 2025</a> — la data del 30 dicembre è confermata direttamente dal post originale.',
       'media.note': 'Nota: la galleria continuerà a crescere — mandami altre foto o video quando vuoi e li aggiungo.',
 
       // ---- contatti.html ----
@@ -492,7 +492,7 @@
       'media.divise.p': 'After months of design work, the band\'s new look debuts: green and black remain the heart of the identity, with more dynamic lines built for the stage and the street.',
       'media.divise.thankstitle': 'A heartfelt thank you',
       'media.divise.thanks': 'To the Municipality of Bedizzole for its constant support, to our trusted tailor and the whole team at Confezioni Grazia for their invaluable, lightning-fast work, to Maps Sport Online for the printing, and to our photographer at Meaning Design for these shots.',
-      'media.divise.note': 'Note for Marco: these photos are the ones published on the <a href="https://www.bedizzolemarchingband.it/it/senza-categoria/nuove-divise/" target="_blank" rel="noopener">official site</a>, where the article is actually dated March 3, 2025 rather than December 30, 2024 — if the date you gave me is the correct one, that\'s what I\'ve used here.',
+      'media.divise.note': 'Note: photos gathered from the <a href="https://www.bedizzolemarchingband.it/it/senza-categoria/nuove-divise/" target="_blank" rel="noopener">official site</a> and from the two Instagram posts of <a href="https://www.instagram.com/p/DEN70r5Ntin/" target="_blank" rel="noopener">December 30, 2024</a> (the first announcement) and <a href="https://www.instagram.com/p/DElC1GGtplP/" target="_blank" rel="noopener">January 8, 2025</a> — the December 30 date is confirmed directly by the original post.',
       'media.note': 'Note: the gallery will keep growing — send me more photos or videos whenever you like and I\'ll add them.',
 
       'contatti.kicker': 'Contact',
