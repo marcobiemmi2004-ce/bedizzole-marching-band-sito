@@ -238,6 +238,12 @@
       'media.ventesimo.p': 'Le foto della doppia sfilata per i 20 anni della Marching Band, tra Bedizzole e il centro di Brescia.',
       'media.ventesimo.videolabel': 'Video del Ventesimo',
       'media.ventesimo.videosub': 'I file sono troppo pesanti per il sito: arrivano su YouTube',
+      'media.divise.kicker': '30 dicembre 2024',
+      'media.divise.h2': 'Nuove divise ufficiali',
+      'media.divise.p': 'Dopo mesi di progettazione, il debutto del nuovo look della Marching Band: verde e nero restano il cuore dell\'identità, con linee più dinamiche pensate per il palco e per la strada.',
+      'media.divise.thankstitle': 'Un grazie di cuore',
+      'media.divise.thanks': 'Al Comune di Bedizzole per il supporto costante, alla nostra sarta di fiducia e a tutto lo staff di Confezioni Grazia per il lavoro prezioso e velocissimo, a Maps Sport Online per le stampe, e alla nostra fotografa di Meaning Design per questi scatti.',
+      'media.divise.note': 'Nota per Marco: le foto sono quelle pubblicate sul <a href="https://www.bedizzolemarchingband.it/it/senza-categoria/nuove-divise/" target="_blank" rel="noopener">sito ufficiale</a>, dove però l\'articolo risulta datato 3 marzo 2025 e non 30 dicembre 2024 — se la data corretta è quella che mi hai dato dimmelo pure, l\'ho già usata qui.',
       'media.note': 'Nota: la galleria continuerà a crescere — mandami altre foto o video quando vuoi e li aggiungo.',
 
       // ---- contatti.html ----
@@ -481,6 +487,12 @@
       'media.ventesimo.p': 'Photos from the two parades for the band\'s 20th anniversary, between Bedizzole and Brescia city centre.',
       'media.ventesimo.videolabel': 'Il Ventesimo video',
       'media.ventesimo.videosub': 'The files are too large for the site: coming soon on YouTube',
+      'media.divise.kicker': 'December 30, 2024',
+      'media.divise.h2': 'New Official Uniforms',
+      'media.divise.p': 'After months of design work, the band\'s new look debuts: green and black remain the heart of the identity, with more dynamic lines built for the stage and the street.',
+      'media.divise.thankstitle': 'A heartfelt thank you',
+      'media.divise.thanks': 'To the Municipality of Bedizzole for its constant support, to our trusted tailor and the whole team at Confezioni Grazia for their invaluable, lightning-fast work, to Maps Sport Online for the printing, and to our photographer at Meaning Design for these shots.',
+      'media.divise.note': 'Note for Marco: these photos are the ones published on the <a href="https://www.bedizzolemarchingband.it/it/senza-categoria/nuove-divise/" target="_blank" rel="noopener">official site</a>, where the article is actually dated March 3, 2025 rather than December 30, 2024 — if the date you gave me is the correct one, that\'s what I\'ve used here.',
       'media.note': 'Note: the gallery will keep growing — send me more photos or videos whenever you like and I\'ll add them.',
 
       'contatti.kicker': 'Contact',

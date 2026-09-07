@@ -1040,6 +1040,22 @@ footer a:hover { color: var(--bmb-green-light); }
   margin: -6px 0 0;
 }
 
+.thanks-note {
+  margin-top: 26px;
+  padding: 20px 24px;
+  background: #fbfbf9;
+  border-left: 4px solid var(--bmb-gold);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.thanks-note h4 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.02em;
+  color: var(--bmb-green);
+  margin-bottom: 6px;
+}
+.thanks-note p { color: #55584f; font-size: 0.92rem; line-height: 1.6; margin: 0; }
+
 /* fade-in on scroll */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
 .reveal.in { opacity: 1; transform: translateY(0); }

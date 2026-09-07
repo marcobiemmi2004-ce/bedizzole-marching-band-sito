@@ -4,3 +4,6 @@
 # OS junk
 Thumbs.db
 .DS_Store
+
+# temp source images before resize (not for the site)
+img/media/*-src/
