@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
   ScrollTrigger.matchMedia({
     // Desktop / tablet: shorter, smoother cinematic range.
     '(min-width: 761px)': function () {
-      buildTimeline({ maxScale: 9, tilt: -7, distance: '+=1400' });
+      buildTimeline({ maxScale: 9, tilt: -7, distance: '+=950' });
     },
     // Mobile: shorter still, lighter scale range for smoothness on weaker GPUs.
     '(max-width: 760px)': function () {
-      buildTimeline({ maxScale: 5.2, tilt: -4, distance: '+=850' });
+      buildTimeline({ maxScale: 5.2, tilt: -4, distance: '+=570' });
     },
   });
 

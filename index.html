@@ -98,17 +98,11 @@
         <span class="tag" data-i18n="path2.tag">Musicisti già formati</span>
         <h3 data-i18n="path2.h3">Suoni già? Vieni a fare una prova.</h3>
         <p data-i18n="path2.p">Se hai già esperienza con uno strumento (anche fuori dal marching), ti aspettiamo a una prova generale per conoscerci dal vivo.</p>
-        <div class="path-rehearsal">
-          <span class="badge" data-i18n="rehearsal.badge">Prove generali</span>
-          <div>
-            <strong data-i18n="rehearsal.time">Ogni giovedì &middot; 20:45 &ndash; 22:30</strong>
-            <small data-i18n="rehearsal.location">Sede: Via Monte Grappa, 21 &ndash; Bedizzole (BS) &middot; tutti i musicisti sono benvenuti!</small>
-          </div>
-        </div>
         <ul>
           <li data-i18n="path2.li2">Repertorio e formazione in continuo aggiornamento</li>
           <li data-i18n="path2.li3">Sfilate, concorsi ed eventi durante l'anno</li>
         </ul>
+        <p style="font-weight:600;margin-bottom:20px;" data-i18n="path2.join">Entra anche tu a far parte di questo gruppo!</p>
         <a href="contatti.html" class="btn btn-primary" data-i18n="path2.cta">Contattaci per una prova</a>
       </div>
     </div>
@@ -167,11 +161,31 @@
       <h2 data-i18n="gallery.h2">Gli ultimi scatti dalle sfilate</h2>
     </div>
   </div>
-  <div class="gallery-strip reveal">
-    <img src="img/band-comune-esibizione.jpg" alt="BMB in esibizione davanti al Comune di Bedizzole">
-    <img src="img/colorguard-bandiere-2.jpg" alt="Color guard BMB con le bandiere in sfilata">
-    <img src="img/band-ottoni-corteo.jpg" alt="Sezione ottoni BMB in corteo">
-    <img src="img/band-ritratto-bn.jpg" alt="Ritratto in bianco e nero della formazione BMB">
+  <div class="gallery-strip-viewport reveal">
+    <button type="button" class="gallery-arrow gallery-arrow-prev" id="gallery-prev" aria-label="Foto precedenti">&#10094;</button>
+    <button type="button" class="gallery-arrow gallery-arrow-next" id="gallery-next" aria-label="Foto successive">&#10095;</button>
+    <div class="gallery-strip" id="gallery-strip">
+      <img src="img/band-comune-esibizione.jpg" alt="BMB in esibizione davanti al Comune di Bedizzole">
+      <img src="img/colorguard-bandiere-2.jpg" alt="Color guard BMB con le bandiere in sfilata">
+      <img src="img/band-ottoni-corteo.jpg" alt="Sezione ottoni BMB in corteo">
+      <img src="img/band-ritratto-bn.jpg" alt="Ritratto in bianco e nero della formazione BMB">
+      <img src="img/band-colorguard-e-corpo.jpg" alt="Color guard e corpo musicale BMB insieme in sfilata">
+      <img src="img/band-formazione-2.jpg" alt="La Marching Band in formazione">
+      <img src="img/colorguard-bandiere-1.jpg" alt="Color guard BMB con le bandiere">
+      <img src="img/band-piazza-vittorio-emanuele.jpg" alt="BMB sfila in Piazza Vittorio Emanuele">
+    </div>
+  </div>
+  <div class="container">
+    <div class="gallery-dots" id="gallery-dots">
+      <button type="button" class="dot active" data-index="0" aria-label="Foto 1"></button>
+      <button type="button" class="dot" data-index="1" aria-label="Foto 2"></button>
+      <button type="button" class="dot" data-index="2" aria-label="Foto 3"></button>
+      <button type="button" class="dot" data-index="3" aria-label="Foto 4"></button>
+      <button type="button" class="dot" data-index="4" aria-label="Foto 5"></button>
+      <button type="button" class="dot" data-index="5" aria-label="Foto 6"></button>
+      <button type="button" class="dot" data-index="6" aria-label="Foto 7"></button>
+      <button type="button" class="dot" data-index="7" aria-label="Foto 8"></button>
+    </div>
   </div>
 </section>
 
@@ -229,6 +243,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/cinema.js"></script>
+<script src="js/gallery-strip.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -315,7 +315,7 @@ img { max-width: 100%; display: block; }
   50% { opacity: 1; transform: translateY(5px); }
 }
 .cinema-black-bridge {
-  height: 34vh;
+  height: 10vh;
   /* Smoothstep-eased grayscale ramp (zero slope at both ends) so it blends
      into the solid black above and the page background below with no
      visible seam or banding "step". */
@@ -431,6 +431,8 @@ section { padding: 88px 0; }
 @media (max-width: 760px) { .paths { grid-template-columns: 1fr; } }
 
 .path-card {
+  display: flex;
+  flex-direction: column;
   background: var(--bmb-black);
   color: var(--bmb-white);
   border-radius: var(--radius);
@@ -439,6 +441,7 @@ section { padding: 88px 0; }
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.06);
 }
+.path-card .btn { margin-top: auto; align-self: flex-start; }
 .path-card::before {
   content: '';
   position: absolute;
@@ -482,13 +485,66 @@ section { padding: 88px 0; }
 .info-card p { font-size: 0.92rem; color: #55584f; margin: 0 0 14px; }
 .info-card .go { font-family: 'Oswald', sans-serif; font-size: 0.8rem; letter-spacing: 0.08em; color: var(--bmb-green); text-transform: uppercase; }
 
-.gallery-strip {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4px;
+.gallery-strip-viewport { position: relative; overflow: hidden; }
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(15,16,15,0.55);
+  color: var(--bmb-white);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s ease, transform .2s ease;
 }
-.gallery-strip img { height: 220px; width: 100%; object-fit: cover; }
-@media (max-width: 760px) { .gallery-strip { grid-template-columns: repeat(2, 1fr); } }
+.gallery-arrow:hover { background: rgba(15,16,15,0.8); }
+.gallery-arrow-prev { left: 14px; }
+.gallery-arrow-next { right: 14px; }
+@media (max-width: 760px) {
+  .gallery-arrow { width: 36px; height: 36px; font-size: 0.95rem; }
+}
+.gallery-strip {
+  display: flex;
+  gap: 4px;
+  transition: transform .6s cubic-bezier(.65,0,.35,1);
+  will-change: transform;
+}
+.gallery-strip img {
+  flex: 0 0 25%;
+  width: 25%;
+  height: 220px;
+  object-fit: cover;
+}
+@media (max-width: 760px) {
+  .gallery-strip img { flex: 0 0 62%; width: 62%; height: 180px; }
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  padding-top: 18px;
+}
+.gallery-dots .dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #d9d8d1;
+  cursor: pointer;
+  transition: background .2s ease, transform .2s ease;
+}
+.gallery-dots .dot:hover { background: #b9b8b0; }
+.gallery-dots .dot.active { background: var(--bmb-green); transform: scale(1.35); }
 
 /* ---------- Book-us CTA banner ---------- */
 .book-cta {
