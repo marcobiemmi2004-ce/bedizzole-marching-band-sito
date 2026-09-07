@@ -18,6 +18,7 @@
       'footer.contacts': 'Contatti',
       'footer.rights': 'Tutti i diritti riservati.',
       'footer.construction': 'Sito in costruzione — bozza di lavoro',
+      'footer.legal': 'P.IVA 02880260985 · CF 93000390174',
 
       // ---- index.html ----
       'hero.eyebrow': '♪ BEDIZZOLE (BS) · DAL CUORE DELLA COMUNITÀ',
@@ -274,6 +275,7 @@
       'footer.contacts': 'Contact',
       'footer.rights': 'All rights reserved.',
       'footer.construction': 'Site under construction — work in progress',
+      'footer.legal': 'VAT 02880260985 · Tax code 93000390174',
 
       'hero.eyebrow': '♪ BEDIZZOLE (BS), ITALY · FROM THE HEART OF THE COMMUNITY',
       'hero.h1': 'One band, one sound.',

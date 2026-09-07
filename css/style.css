@@ -514,7 +514,7 @@ section { padding: 88px 0; }
 .gallery-strip {
   display: flex;
   gap: 4px;
-  transition: transform .6s cubic-bezier(.65,0,.35,1);
+  transition: none;
   will-change: transform;
 }
 .gallery-strip img {
@@ -885,6 +885,7 @@ footer a:hover { color: var(--bmb-green-light); }
   font-size: 1.05rem;
 }
 .event-card {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 26px;
@@ -893,6 +894,7 @@ footer a:hover { color: var(--bmb-green-light); }
   border-radius: var(--radius);
   padding: 22px 28px;
   transition: transform .2s ease, box-shadow .2s ease;
+  overflow: hidden;
 }
 .event-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(15,16,15,0.1); }
 .event-card[hidden] { display: none; }
@@ -924,6 +926,28 @@ footer a:hover { color: var(--bmb-green-light); }
   .event-card { flex-wrap: wrap; }
   .event-tag { margin-left: 94px; }
 }
+
+/* Themed background photo behind an upcoming-event card. The photo URL is
+   set as a plain inline background-image (not a CSS custom property) so
+   it resolves against the page, not against this stylesheet's folder;
+   the gradient overlay (no url() involved) stays here as a ::before. */
+.event-card.has-bg {
+  border-color: transparent;
+  color: var(--bmb-white);
+  background-size: cover;
+  background-position: center;
+}
+.event-card.has-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(15,16,15,0.86) 0%, rgba(15,16,15,0.72) 45%, rgba(15,16,15,0.5) 100%);
+  z-index: 0;
+}
+.event-card.has-bg > * { position: relative; z-index: 1; }
+.event-card.has-bg .event-date { background: rgba(248,248,246,0.14); backdrop-filter: blur(1px); }
+.event-card.has-bg .event-info .loc { color: rgba(248,248,246,0.82); }
+.event-card.has-bg .event-tag { background: rgba(248,248,246,0.16); color: var(--bmb-white); }
 
 /* ---------- Historic photo (timeline) ---------- */
 .timeline-photo {
