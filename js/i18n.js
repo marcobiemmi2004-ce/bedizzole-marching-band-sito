@@ -224,8 +224,16 @@
       // ---- media.html ----
       'media.kicker': 'Media',
       'media.h1': 'Foto e video dal campo',
-      'media.boxtitle': 'Galleria in arrivo',
-      'media.boxtext': 'Qui raccoglieremo le foto migliori delle sfilate e degli spettacoli, insieme ai video delle esibizioni più belle — compreso quello del Ventesimo. Mandami il materiale quando vuoi e costruiamo insieme la galleria.',
+      'media.event1.kicker': '28 giugno 2026',
+      'media.event1.h2': 'Il Ventesimo',
+      'media.event1.p': 'Le foto della doppia sfilata per i 20 anni della Marching Band, tra Bedizzole e il centro di Brescia.',
+      'media.event1.videolabel': 'Video del Ventesimo',
+      'media.event1.videosub': 'I file sono troppo pesanti per il sito: arrivano su YouTube',
+      'media.event2.kicker': '28–31 agosto 2026',
+      'media.event2.h2': '133ª Fête de la Rosière — Vinay',
+      'media.event2.p': 'Quattro giorni di festa in Francia, tra sfilate e spettacoli insieme a formazioni da tutta Europa.',
+      'media.event2.videosh4': 'I video dalla Francia',
+      'media.note': 'Nota: la galleria continuerà a crescere — mandami altre foto o video quando vuoi e li aggiungo.',
 
       // ---- contatti.html ----
       'contatti.kicker': 'Contatti',
@@ -454,8 +462,16 @@
       // ---- media.html ----
       'media.kicker': 'Media',
       'media.h1': 'Photos and videos from the field',
-      'media.boxtitle': 'Gallery coming soon',
-      'media.boxtext': 'Here we\'ll collect the best photos from our parades and shows, along with videos of our favourite performances — including the one from the 20th anniversary. Send me material whenever you like and we\'ll build the gallery together.',
+      'media.event1.kicker': 'June 28, 2026',
+      'media.event1.h2': 'Il Ventesimo',
+      'media.event1.p': 'Photos from the two parades for the band\'s 20th anniversary, between Bedizzole and Brescia city centre.',
+      'media.event1.videolabel': 'Il Ventesimo video',
+      'media.event1.videosub': 'The files are too large for the site: coming soon on YouTube',
+      'media.event2.kicker': 'August 28–31, 2026',
+      'media.event2.h2': '133rd Fête de la Rosière — Vinay',
+      'media.event2.p': 'Four days of celebration in France, parading and performing alongside bands from across Europe.',
+      'media.event2.videosh4': 'Videos from France',
+      'media.note': 'Note: the gallery will keep growing — send me more photos or videos whenever you like and I\'ll add them.',
 
       'contatti.kicker': 'Contact',
       'contatti.h1': 'Write to us, or come visit on Thursdays',
