@@ -318,7 +318,7 @@
       'accademia.startloc': 'Via Monte Grappa, 21 – Bedizzole (BS)',
       'trial.note': 'Zero impegno!',
       'trial.h3': 'Prenota una prova <span style="color:var(--bmb-gold);">gratuita</span>!',
-      'trial.p': 'Niente audizioni, niente ansia: la prima prova è gratuita. Vieni a vedere come suona l\'Accademia, provi uno strumento e decidi tu se innamorartene. Chi vuole può contattarci per fissare il giorno.',
+      'trial.p': 'Niente audizioni, niente ansia: la prima prova è gratuita. Vieni a vedere come suona l\'Accademia, provi uno strumento e decidi tu se innamorartene.',
       'trial.cta': 'Prenota la tua prova',
       'accademia.corsiprop.kicker': 'Corsi (dal 7 settembre)',
       'accademia.corsiprop.h2': 'Cosa puoi imparare',
@@ -336,7 +336,7 @@
       'strumento.pianoforte': 'Pianoforte',
       'strumento.canto': 'Canto',
       'accademia.info.h2': 'Informazioni pratiche',
-      'accademia.info.text': 'L\'età minima per iscriversi è di 6 anni. La quota di iscrizione è di 15€. Gli orari delle lezioni sono da concordare direttamente con l\'insegnante, e il costo dei singoli corsi varia da corso a corso: contatta l\'insegnante per saperne di più.',
+      'accademia.info.text': 'L\'età minima per iscriversi è di 6 anni. La quota di iscrizione è di 15€. Gli orari delle lezioni sono da concordare direttamente con l\'insegnante, e il costo dei singoli corsi varia da corso a corso: contatta l\'insegnante per saperne di più!',
 
       // ---- media.html ----
       'media.kicker': 'Media',
@@ -679,7 +679,7 @@
       'accademia.startloc': 'Via Monte Grappa, 21 – Bedizzole (BS), Italy',
       'trial.note': 'No commitment!',
       'trial.h3': 'Book a <span style="color:var(--bmb-gold);">free</span> trial!',
-      'trial.p': 'No auditions, no stress: your first trial lesson is free. Come see what the Academy sounds like, try an instrument and decide for yourself if you love it. Anyone interested can contact us to set a date.',
+      'trial.p': 'No auditions, no stress: your first trial lesson is free. Come see what the Academy sounds like, try an instrument and decide for yourself if you love it.',
       'trial.cta': 'Book your trial',
       'accademia.corsiprop.kicker': 'Courses (from September 7)',
       'accademia.corsiprop.h2': 'What you can learn',
@@ -697,7 +697,7 @@
       'strumento.pianoforte': 'Piano',
       'strumento.canto': 'Singing',
       'accademia.info.h2': 'Practical information',
-      'accademia.info.text': 'The minimum age to enrol is 6 years old. The enrolment fee is €15. Lesson schedules are arranged directly with the teacher, and the cost of each course varies: contact the teacher to find out more.',
+      'accademia.info.text': 'The minimum age to enrol is 6 years old. The enrolment fee is €15. Lesson schedules are arranged directly with the teacher, and the cost of each course varies: contact the teacher to find out more!',
 
       // ---- media.html ----
       'media.kicker': 'Media',
