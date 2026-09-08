@@ -14,8 +14,6 @@
 
 * { box-sizing: border-box; }
 
-html { overflow-x: hidden; }
-
 /* Note: no native scroll-behavior:smooth — it fights GSAP ScrollTrigger's own
    scrub smoothing on the cinematic hero (overshoot/jank). Internal anchor
    links still jump instantly, which is fine since scrub provides the feel. */
@@ -26,7 +24,6 @@ body {
   background: var(--bmb-white);
   color: var(--bmb-black);
   line-height: 1.55;
-  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, .display {
@@ -361,9 +358,6 @@ img { max-width: 100%; display: block; }
 .rehearsal-banner {
   background: var(--bmb-green-dark);
   color: var(--bmb-white);
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
 }
 .rehearsal-inner {
   display: flex;
@@ -372,8 +366,6 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 18px;
   padding: 22px 0;
-  max-width: 1180px;
-  margin: 0 auto;
 }
 .rehearsal-text { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
 .rehearsal-text .badge {
