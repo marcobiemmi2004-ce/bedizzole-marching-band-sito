@@ -72,7 +72,7 @@
 
       // ---- chi-siamo.html ----
       'chisiamo.kicker': 'Chi siamo',
-      'chisiamo.h1': 'Le persone dietro la divisa BMB',
+      'chisiamo.h1': 'Le persone dietro la divisa',
       'chisiamo.intro': 'Dal 1880 portiamo musica per le strade di Bedizzole. Oggi siamo una marching show band di 49 persone tra musicisti, color guard e staff, con un’Accademia per i più giovani e un motto che ci rappresenta: <strong>Una banda, un sound.</strong>',
       'stat.musicisti': 'Musicisti',
       'stat.colorguard': 'Color Guard',
@@ -105,7 +105,7 @@
 
       // ---- storia.html ----
       'storia.kicker': 'Storia',
-      'storia.h1': 'Il cammino della Bedizzole Marching Band',
+      'storia.h1': 'Il cammino della <br>Bedizzole Marching Band',
       'storia.y1.h3': 'Nasce la Banda Musicale Cittadina',
       'storia.y1.p': 'La banda di Bedizzole nasce nel 1880 come banda musicale cittadina, con lo scopo di "allietare periodicamente la cittadinanza bedizzolese in occasioni di cerimonie religiose e festeggiamenti locali": il punto di partenza di una tradizione lunga oltre un secolo.',
       'storia.y1b.h3': 'Cresce il gruppo, cresce la fama',
@@ -311,7 +311,7 @@
 
       // ---- accademia.html ----
       'accademia.kicker': 'Accademia',
-      'accademia.h1': 'Impara a suonare, un passo alla volta',
+      'accademia.h1': 'Impara a suonare, <br>un passo alla volta',
       'accademia.mission': 'La Bedizzole Marching Band vanta la presenza di un\'Accademia Musicale aperta a tutti i giovanissimi che vogliono avvicinarsi al mondo della musica e della marching band. L\'obiettivo è formare nuove figure da inserire, in un secondo momento e senza alcun vincolo, nella Bedizzole Marching Band.',
       'accademia.startbadge': 'Nuovi corsi',
       'accademia.startdate': 'Si parte il 7 settembre 2026',
@@ -340,7 +340,7 @@
 
       // ---- media.html ----
       'media.kicker': 'Media',
-      'media.h1': 'Foto e video dal campo',
+      'media.h1': 'Foto e video',
       'media.vinay.kicker': '28–31 agosto 2026',
       'media.vinay.h2': '133ª Fête de la Rosière — Vinay',
       'media.vinay.p': 'Quattro giorni di festa in Francia, tra sfilate e spettacoli ufficiali con formazioni da tutta Europa, e anche momenti più spontanei, nati semplicemente per il piacere di suonare insieme alle altre band.',
@@ -360,7 +360,7 @@
 
       // ---- contatti.html ----
       'contatti.kicker': 'Contatti',
-      'contatti.h1': 'Scrivici o vieni a trovarci al giovedì',
+      'contatti.h1': 'Scrivici o vieni a trovarci',
       'contatti.sedeprove.label': 'Sede prove · Accademia',
       'contatti.sedelegale.label': 'Sede legale',
       'contatti.scrivici.kicker': 'Scrivici',
@@ -468,7 +468,7 @@
       'chisiamo.roster.note': 'Note: sections and numbers rebuilt from the <a href="https://www.bedizzolemarchingband.it/it/chi-siamo/" target="_blank" rel="noopener">Chi Siamo</a> page of the current site: 38 musicians + 5 color guard + 5 staff + music director Nicola Orsato = 49 total members. The site generically states "54 members" — if 5 people are missing from the count, let me know and we\'ll fix it together.',
 
       'storia.kicker': 'History',
-      'storia.h1': 'The journey of the Bedizzole Marching Band',
+      'storia.h1': 'The journey of the <br>Bedizzole Marching Band',
       'storia.y1.h3': 'The Civic Music Band is born',
       'storia.y1.p': 'Bedizzole’s band was founded in 1880 as the town’s civic music band, "to periodically entertain the citizens of Bedizzole on the occasion of religious ceremonies and local celebrations": the starting point of a tradition spanning more than a century.',
       'storia.y1b.h3': 'The group grows, and so does its fame',
@@ -672,7 +672,7 @@
       'month.mar': 'Mar',
 
       'accademia.kicker': 'Academy',
-      'accademia.h1': 'Learn to play, one step at a time',
+      'accademia.h1': 'Learn to play, <br>one step at a time',
       'accademia.mission': 'The Bedizzole Marching Band runs a Music Academy open to all young people who want to approach the world of music and marching band. The goal is to train new members who may later join the Bedizzole Marching Band, with no obligation to do so.',
       'accademia.startbadge': 'New courses',
       'accademia.startdate': 'Starting September 7, 2026',
@@ -701,7 +701,7 @@
 
       // ---- media.html ----
       'media.kicker': 'Media',
-      'media.h1': 'Photos and videos from the field',
+      'media.h1': 'Photos and videos',
       'media.vinay.kicker': 'August 28–31, 2026',
       'media.vinay.h2': '133rd Fête de la Rosière — Vinay',
       'media.vinay.p': 'Four days of celebration in France, official parades and shows with bands from across Europe, plus more spontaneous moments, born simply from the joy of playing together with the other bands.',
@@ -720,7 +720,7 @@
       'media.note': 'Note: the gallery will keep growing — send me more photos or videos whenever you like and I\'ll add them.',
 
       'contatti.kicker': 'Contact',
-      'contatti.h1': 'Write to us, or come visit on Thursdays',
+      'contatti.h1': 'Write to us, or come visit',
       'contatti.sedeprove.label': 'Rehearsal venue · Academy',
       'contatti.sedelegale.label': 'Registered office',
       'contatti.scrivici.kicker': 'Write to us',
