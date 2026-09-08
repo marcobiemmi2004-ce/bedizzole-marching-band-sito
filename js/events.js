@@ -26,22 +26,50 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // "Dove siamo stati?" year filter for the past-events archive.
+// Under "Tutti" (all years) the list can get long, so it's paginated
+// 5 cards at a time with a small "show more" prompt; picking a specific
+// year shows every matching card at once, no pagination.
 document.addEventListener('DOMContentLoaded', () => {
   const filterBar = document.getElementById('year-filter');
   const pastList = document.getElementById('past-event-list');
+  const loadMorePrompt = document.getElementById('load-more-prompt');
+  const loadMoreBtn = document.getElementById('load-more-btn');
   if (!filterBar || !pastList) return;
 
   const pills = Array.from(filterBar.querySelectorAll('.year-pill'));
   const cards = Array.from(pastList.querySelectorAll('.event-card[data-year]'));
+  const PAGE_SIZE = 5;
+  let visibleInAll = PAGE_SIZE;
+
+  function render() {
+    const activePill = filterBar.querySelector('.year-pill.active');
+    const year = activePill ? activePill.getAttribute('data-year') : 'all';
+
+    if (year === 'all') {
+      cards.forEach((card, i) => { card.hidden = i >= visibleInAll; });
+      if (loadMorePrompt) loadMorePrompt.hidden = visibleInAll >= cards.length;
+    } else {
+      cards.forEach((card) => {
+        card.hidden = card.getAttribute('data-year') !== year;
+      });
+      if (loadMorePrompt) loadMorePrompt.hidden = true;
+    }
+  }
 
   filterBar.addEventListener('click', (e) => {
     const btn = e.target.closest('.year-pill');
     if (!btn) return;
-    const year = btn.getAttribute('data-year');
-
     pills.forEach((p) => p.classList.toggle('active', p === btn));
-    cards.forEach((card) => {
-      card.hidden = year !== 'all' && card.getAttribute('data-year') !== year;
-    });
+    if (btn.getAttribute('data-year') === 'all') visibleInAll = PAGE_SIZE;
+    render();
   });
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', () => {
+      visibleInAll += PAGE_SIZE;
+      render();
+    });
+  }
+
+  render();
 });

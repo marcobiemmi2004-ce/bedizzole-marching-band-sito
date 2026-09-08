@@ -849,6 +849,22 @@ footer a:hover { color: var(--bmb-green-light); }
 .event-date.year-only { justify-content: center; }
 .event-date.year-only .day { font-size: 1.3rem; }
 
+.load-more-prompt { text-align: center; margin-top: 28px; }
+.load-more-prompt p { font-size: 0.95rem; color: #55584f; margin-bottom: 14px; }
+.load-more-btn {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  padding: 10px 26px;
+  border-radius: 999px;
+  border: 2px solid var(--bmb-green);
+  background: transparent;
+  color: var(--bmb-green);
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease;
+}
+.load-more-btn:hover { background: var(--bmb-green); color: var(--bmb-white); }
+
 /* ---------- Follow-us banner ---------- */
 .follow-banner {
   background: var(--bmb-black);
