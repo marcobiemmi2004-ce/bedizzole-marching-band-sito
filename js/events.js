@@ -1,8 +1,11 @@
 // Hide past events automatically: an event stays visible through its own
 // day, then disappears on its own starting the day after — no manual
-// edits needed as time passes.
+// edits needed as time passes. Once it's gone from "Eventi futuri", a
+// stripped-down copy (no photo, plain card like every other past event)
+// is moved into the "Dove siamo stati?" archive, most-recent-first.
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('event-list');
+  const pastList = document.getElementById('past-event-list');
   if (!list) return;
 
   const today = new Date();
@@ -10,12 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const cards = Array.from(list.querySelectorAll('.event-card[data-date]'));
   let visibleCount = 0;
+  const expired = [];
 
   cards.forEach((card) => {
     const raw = card.getAttribute('data-date'); // YYYY-MM-DD
     const eventDate = new Date(raw + 'T00:00:00');
     if (eventDate < today) {
       card.hidden = true;
+      expired.push({ card, raw });
     } else {
       visibleCount++;
     }
@@ -23,6 +28,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const emptyNote = document.getElementById('empty-events-note');
   if (emptyNote) emptyNote.hidden = visibleCount > 0;
+
+  if (pastList && expired.length) {
+    // Most recent first, matching the archive's own ordering.
+    expired.sort((a, b) => b.raw.localeCompare(a.raw));
+
+    expired.forEach(({ card, raw }) => {
+      const year = raw.slice(0, 4);
+      const day = String(Number(raw.slice(8, 10)));
+      const srcMonth = card.querySelector('.event-date .month');
+      const srcH3 = card.querySelector('.event-info h3');
+      const srcLoc = card.querySelector('.event-info a.loc');
+      const srcTag = card.querySelector('.event-tag');
+
+      const pastCard = document.createElement('div');
+      pastCard.className = 'event-card reveal';
+      pastCard.setAttribute('data-year', year);
+
+      const dateBox = document.createElement('div');
+      dateBox.className = 'event-date';
+      const dayEl = document.createElement('div');
+      dayEl.className = 'day';
+      dayEl.textContent = day;
+      dateBox.appendChild(dayEl);
+      if (srcMonth) {
+        const monthEl = document.createElement('div');
+        monthEl.className = 'month';
+        const key = srcMonth.getAttribute('data-i18n');
+        if (key) monthEl.setAttribute('data-i18n', key);
+        monthEl.textContent = srcMonth.textContent; // already translated by i18n.js
+        dateBox.appendChild(monthEl);
+      }
+
+      const info = document.createElement('div');
+      info.className = 'event-info';
+      const h3 = document.createElement('h3');
+      if (srcH3) {
+        const key = srcH3.getAttribute('data-i18n');
+        if (key) h3.setAttribute('data-i18n', key);
+        h3.textContent = srcH3.textContent;
+      }
+      info.appendChild(h3);
+      if (srcLoc) {
+        const loc = document.createElement('a');
+        loc.className = 'loc';
+        loc.href = srcLoc.href;
+        loc.target = '_blank';
+        loc.rel = 'noopener';
+        const key = srcLoc.getAttribute('data-i18n');
+        if (key) loc.setAttribute('data-i18n', key);
+        loc.textContent = srcLoc.textContent;
+        info.appendChild(loc);
+      }
+
+      pastCard.appendChild(dateBox);
+      pastCard.appendChild(info);
+      if (srcTag) {
+        const tag = document.createElement('span');
+        tag.className = 'event-tag';
+        const key = srcTag.getAttribute('data-i18n');
+        if (key) tag.setAttribute('data-i18n', key);
+        tag.textContent = srcTag.textContent;
+        pastCard.appendChild(tag);
+      }
+
+      pastList.insertBefore(pastCard, pastList.firstChild);
+    });
+  }
 });
 
 // "Dove siamo stati?" year filter for the past-events archive.
