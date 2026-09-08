@@ -6,7 +6,25 @@
 document.addEventListener('DOMContentLoaded', () => {
   const list = document.getElementById('event-list');
   const pastList = document.getElementById('past-event-list');
+  const filterBar = document.getElementById('year-filter');
   if (!list) return;
+
+  // Creates the year-pill for a given year if it doesn't exist yet (e.g.
+  // the very first event of a new year to expire into the archive), kept
+  // in descending order right after "Tutti".
+  function ensureYearPill(year) {
+    if (!filterBar) return;
+    if (filterBar.querySelector(`.year-pill[data-year="${year}"]`)) return;
+    const pill = document.createElement('button');
+    pill.type = 'button';
+    pill.className = 'year-pill';
+    pill.setAttribute('data-year', year);
+    pill.textContent = year;
+    const existing = Array.from(filterBar.querySelectorAll('.year-pill[data-year]'))
+      .filter((p) => p.getAttribute('data-year') !== 'all');
+    const insertBefore = existing.find((p) => Number(p.getAttribute('data-year')) < Number(year));
+    filterBar.insertBefore(pill, insertBefore || null);
+  }
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -35,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     expired.forEach(({ card, raw }) => {
       const year = raw.slice(0, 4);
+      ensureYearPill(year);
       const day = String(Number(raw.slice(8, 10)));
       const srcMonth = card.querySelector('.event-date .month');
       const srcH3 = card.querySelector('.event-info h3');
