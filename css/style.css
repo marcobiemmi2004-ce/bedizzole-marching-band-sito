@@ -964,20 +964,34 @@ footer a:hover { color: var(--bmb-green-light); }
 @media (max-width: 600px) {
   /* The side-fade photo above is sized for desktop's single wide row,
      where the title/location text stays inside the transparent left
-     zone. On phones that same text wraps onto its own full-width
-     lines, which would sit right over the now much-narrower opaque
-     photo zone and become hard to read. So on mobile only: drop the
-     fade, and show the photo as its own plain block below the text. */
-  .event-card.has-bg { flex-direction: column; }
+     zone. On phones that layout doesn't work, so upcoming-event cards
+     switch to a small grid: a square photo thumbnail on the left, and
+     on the right a top row (date + tag) followed by title/location —
+     text always on plain white, photo never behind it. */
+  .event-card.has-bg {
+    display: grid;
+    grid-template-columns: 110px auto 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "photo date tag"
+      "photo info info";
+    column-gap: 14px;
+    row-gap: 10px;
+    align-items: start;
+  }
   .event-card .event-photo {
+    grid-area: photo;
     position: static;
-    order: 3;
-    width: calc(100% + 56px);
-    height: 150px;
-    margin: 16px -28px -22px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-self: stretch;
     -webkit-mask-image: none;
     mask-image: none;
   }
+  .event-card.has-bg .event-date { grid-area: date; }
+  .event-card.has-bg .event-tag { grid-area: tag; justify-self: start; align-self: center; margin-left: 0; }
+  .event-card.has-bg .event-info { grid-area: info; }
 }
 
 /* ---------- Historic photo (timeline) ---------- */
