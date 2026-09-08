@@ -27,8 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // "Dove siamo stati?" year filter for the past-events archive.
 // Under "Tutti" (all years) the list can get long, so it's paginated
-// 5 cards at a time with a small "show more" prompt; picking a specific
-// year shows every matching card at once, no pagination.
+// 5 cards at a time with a small "show more" button; once every card is
+// shown, the same button turns into "show less" and collapses back to 5.
+// Picking a specific year shows every matching card at once, no pagination.
 document.addEventListener('DOMContentLoaded', () => {
   const filterBar = document.getElementById('year-filter');
   const pastList = document.getElementById('past-event-list');
@@ -41,13 +42,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const PAGE_SIZE = 5;
   let visibleInAll = PAGE_SIZE;
 
+  // Small local label map so the button's text stays correct immediately,
+  // even before the next full language-toggle re-scan (which will also
+  // pick the right text via the data-i18n key set below).
+  const LABELS = {
+    it: { more: 'Visualizza altro', less: 'Visualizza meno' },
+    en: { more: 'Show more', less: 'Show less' },
+  };
+  function labelFor(state) {
+    const lang = document.documentElement.getAttribute('lang') || 'it';
+    return (LABELS[lang] || LABELS.it)[state];
+  }
+
   function render() {
     const activePill = filterBar.querySelector('.year-pill.active');
     const year = activePill ? activePill.getAttribute('data-year') : 'all';
 
     if (year === 'all') {
       cards.forEach((card, i) => { card.hidden = i >= visibleInAll; });
-      if (loadMorePrompt) loadMorePrompt.hidden = visibleInAll >= cards.length;
+      const hasMoreThanOnePage = cards.length > PAGE_SIZE;
+      if (loadMorePrompt) loadMorePrompt.hidden = !hasMoreThanOnePage;
+      if (loadMoreBtn && hasMoreThanOnePage) {
+        const allShown = visibleInAll >= cards.length;
+        loadMoreBtn.setAttribute('data-i18n', allShown ? 'past.showless' : 'past.loadmore.cta');
+        loadMoreBtn.textContent = labelFor(allShown ? 'less' : 'more');
+      }
     } else {
       cards.forEach((card) => {
         card.hidden = card.getAttribute('data-year') !== year;
@@ -66,8 +85,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (loadMoreBtn) {
     loadMoreBtn.addEventListener('click', () => {
-      visibleInAll += PAGE_SIZE;
+      const allShown = visibleInAll >= cards.length;
+      visibleInAll = allShown ? PAGE_SIZE : visibleInAll + PAGE_SIZE;
       render();
+      if (allShown) filterBar.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   }
 
