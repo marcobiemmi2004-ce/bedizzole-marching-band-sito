@@ -361,7 +361,7 @@
       // ---- contatti.html ----
       'contatti.kicker': 'Contatti',
       'contatti.h1': 'Scrivici o vieni a trovarci',
-      'contatti.sedeprove.label': 'Sede prove · Accademia',
+      'contatti.sedeprove.label': 'Sede prove · <span style="color:var(--bmb-gold);">Accademia</span>',
       'contatti.sedelegale.label': 'Sede legale',
       'contatti.scrivici.kicker': 'Scrivici',
       'contatti.scrivici.h2': 'Email generale',
@@ -721,7 +721,7 @@
 
       'contatti.kicker': 'Contact',
       'contatti.h1': 'Write to us, or come visit',
-      'contatti.sedeprove.label': 'Rehearsal venue · Academy',
+      'contatti.sedeprove.label': 'Rehearsal venue · <span style="color:var(--bmb-gold);">Academy</span>',
       'contatti.sedelegale.label': 'Registered office',
       'contatti.scrivici.kicker': 'Write to us',
       'contatti.scrivici.h2': 'General email',
