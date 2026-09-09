@@ -838,6 +838,98 @@ footer a:hover { color: var(--bmb-green-light); }
 }
 .person-card .name { font-family: 'Oswald', sans-serif; font-size: 1.15rem; }
 
+/* ---------- Novità (homepage) ---------- */
+.novita-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 860px) { .novita-list { grid-template-columns: 1fr; } }
+.novita-item {
+  background: #fff;
+  border: 1px solid #e7e6e2;
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.novita-date {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bmb-green);
+  margin-bottom: 8px;
+}
+.novita-item h4 { font-size: 1.1rem; margin-bottom: 8px; }
+.novita-item p { font-size: 0.92rem; color: #4a4d4a; margin: 0; }
+
+/* ---------- Form di contatto (Netlify Forms) ---------- */
+.contact-form { max-width: 480px; margin-top: 4px; display: flex; flex-direction: column; gap: 16px; }
+.form-row { display: flex; flex-direction: column; gap: 6px; }
+.form-row label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #55584f;
+}
+.form-row input, .form-row textarea {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  padding: 12px 14px;
+  border: 1px solid #d8d7d2;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--bmb-black);
+  resize: vertical;
+}
+.form-row input:focus, .form-row textarea:focus {
+  outline: none;
+  border-color: var(--bmb-green);
+}
+.contact-form .btn { align-self: flex-start; border: none; cursor: pointer; font-size: 0.9rem; }
+
+/* Badge per segnalare dati segnaposto ancora da confermare (es. IBAN/PayPal
+   inseriti temporaneamente in attesa dei dati reali). */
+.placeholder-badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--bmb-gold);
+  color: var(--bmb-black);
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* ---------- FAQ (accordion nativo <details>/<summary>) ---------- */
+.faq-list { display: flex; flex-direction: column; gap: 10px; max-width: 760px; }
+.faq-item {
+  background: #fff;
+  border: 1px solid #e7e6e2;
+  border-radius: var(--radius);
+  padding: 4px 22px;
+}
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 16px 28px 16px 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 14px;
+  font-size: 1.3rem;
+  color: var(--bmb-green);
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { margin: 0 0 18px; color: #4a4d4a; }
+
 .stat-row { display: flex; gap: 40px; flex-wrap: wrap; margin: 36px 0; }
 .stat { min-width: 120px; }
 .stat .num { font-family: 'Oswald', sans-serif; font-size: 2.4rem; color: var(--bmb-green); line-height: 1; }

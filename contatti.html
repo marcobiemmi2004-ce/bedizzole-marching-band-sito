@@ -96,6 +96,27 @@
       <span><a href="mailto:bedizzolemarchingband.bmb@gmail.com" style="color:inherit;">✉ bedizzolemarchingband.bmb@gmail.com</a></span>
     </div>
 
+    <p class="reveal" style="font-size:0.95rem;color:#8a8d84;margin-top:18px;margin-bottom:10px;" data-i18n="contatti.form.orlabel">Oppure scrivici direttamente da qui:</p>
+    <form name="contatto" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="grazie.html" class="contact-form reveal">
+      <input type="hidden" name="form-name" value="contatto">
+      <p style="position:absolute;left:-9999px;" aria-hidden="true">
+        <label>Non compilare questo campo se sei umano: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+      </p>
+      <div class="form-row">
+        <label for="cf-name" data-i18n="contatti.form.nome">Nome</label>
+        <input type="text" id="cf-name" name="nome" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-email" data-i18n="contatti.form.email">Email</label>
+        <input type="email" id="cf-email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-message" data-i18n="contatti.form.messaggio">Messaggio</label>
+        <textarea id="cf-message" name="messaggio" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" data-i18n="contatti.form.invia">Invia messaggio</button>
+    </form>
+
     <div class="section-head reveal" style="margin-top:50px;">
       <span class="kicker" data-i18n="contatti.direttivo.kicker">Direttivo</span>
       <h2 style="font-size:1.8rem;" data-i18n="contatti.direttivo.h2">Presidente e Vicepresidente</h2>
@@ -127,6 +148,32 @@
       <span class="social-pill"><a href="https://www.youtube.com/c/BedizzoleMarchingBand" target="_blank" rel="noopener" style="color:inherit;display:inline-flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.97C18.88 4 12 4 12 4s-6.88 0-8.59.45A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.95 1.97C5.12 19.5 12 19.5 12 19.5s6.88 0 8.59-.45a2.78 2.78 0 0 0 1.95-1.97 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33ZM9.75 15.02V8.48l5.75 3.27-5.75 3.27Z"/></svg>YouTube</a></span>
       <span class="social-pill"><a href="https://twitter.com/BedizzoleMB" target="_blank" rel="noopener" style="color:inherit;display:inline-flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.5 8.57L23.5 22h-6.94l-5.43-7.1L4.9 22H1.78l8.03-9.17L1 2h7.1l4.9 6.48L18.9 2Zm-1.22 18h1.72L7.4 3.9H5.55L17.68 20Z"/></svg>X</a></span>
       <span class="social-pill"><a href="https://www.tiktok.com/@bedizzolemarchingband" target="_blank" rel="noopener" style="color:inherit;display:inline-flex;align-items:center;gap:8px;"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-.88-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>TikTok</a></span>
+    </div>
+
+    <!--
+      ATTENZIONE: sezione Donazioni con dati SEGNAPOSTO (IBAN e PayPal
+      inventati su richiesta, in attesa dei dati reali dell'associazione).
+      NON pubblicare in produzione finché IBAN e PayPal non sono stati
+      sostituiti con quelli veri.
+    -->
+    <div class="section-head reveal" style="margin-top:50px;">
+      <span class="kicker" data-i18n="contatti.donazioni.kicker">Sostienici</span>
+      <h2 style="font-size:1.8rem;" data-i18n="contatti.donazioni.h2">Dona alla Marching Band</h2>
+    </div>
+    <p class="reveal" style="font-size:1.05rem;color:#4a4d4a;max-width:640px;" data-i18n="contatti.donazioni.text">Le divise, gli strumenti e i viaggi per le sfilate hanno un costo: se vuoi sostenerci con una donazione libera, puoi farlo tramite bonifico o PayPal.</p>
+    <div class="people-grid reveal" style="grid-template-columns:repeat(2,1fr);margin-top:20px;">
+      <div class="person-card" style="text-align:left;">
+        <span class="role" data-i18n="contatti.donazioni.iban.label">Bonifico bancario</span>
+        <div class="name" style="font-size:0.95rem;font-family:'Oswald',sans-serif;letter-spacing:0.02em;">IT60 X054 2811 1010 0000 0123 456</div>
+        <p style="font-size:0.85rem;color:#8a8d84;margin-top:8px;" data-i18n="contatti.donazioni.iban.note">Intestato a Bedizzole Marching Band</p>
+        <span class="placeholder-badge" data-i18n="contatti.donazioni.placeholder">Dato provvisorio — da confermare</span>
+      </div>
+      <div class="person-card" style="text-align:left;">
+        <span class="role" data-i18n="contatti.donazioni.paypal.label">PayPal</span>
+        <div class="name" style="font-size:0.95rem;font-family:'Oswald',sans-serif;letter-spacing:0.02em;">paypal.me/BedizzoleMarchingBand</div>
+        <p style="font-size:0.85rem;color:#8a8d84;margin-top:8px;" data-i18n="contatti.donazioni.paypal.note">Link non ancora attivo</p>
+        <span class="placeholder-badge" data-i18n="contatti.donazioni.placeholder">Dato provvisorio — da confermare</span>
+      </div>
     </div>
   </div>
 </section>
