@@ -38,9 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
     W = step * count;
   }
 
+  // No modulo here on purpose: pos is kept in a safe, un-wrapped range by
+  // frame() below (only while nothing is animating), so this is a direct,
+  // continuous mapping. That matters for goToIndex — with a modulo here,
+  // index 0's canonical position (pos === W) would always collapse to the
+  // same transform regardless of which "copy" was chosen as the nearest
+  // one, turning what should be a short hop to a neighbouring photo into
+  // a jump across almost the entire strip.
   function apply() {
-    const t = ((pos % W) + W) % W;
-    strip.style.transform = `translateX(${t - W}px)`;
+    strip.style.transform = `translateX(${pos - W}px)`;
   }
 
   function currentIndex() {
@@ -65,7 +71,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function goToIndex(index, animate) {
     const target = ((index % count) + count) % count;
-    pos = W - target * step;
+    // W - target*step is *a* position that shows the right photo, but it's
+    // just one of infinitely many (every multiple of W away looks the
+    // same). Pick whichever copy sits closest to where we are right now,
+    // so the animated move is always a short hop to the next/previous
+    // photo instead of occasionally sweeping across almost the whole loop.
+    let newPos = W - target * step;
+    newPos -= Math.round((newPos - pos) / W) * W;
+    pos = newPos;
     strip.style.transition = animate ? 'transform .6s cubic-bezier(.65,0,.35,1)' : 'none';
     apply();
     updateActiveDot();
@@ -94,6 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
     lastTime = time;
     if (!paused) {
       pos += SPEED * dt;
+      // Rewrap by a full loop once we drift past it. Safe to do here with
+      // no visible seam (content repeats every W) — and since this only
+      // runs while unpaused, it never fires mid-transition (any click
+      // pauses the drift for the length of its animation).
+      if (pos > W) pos -= W;
       apply();
       updateActiveDot();
     }
