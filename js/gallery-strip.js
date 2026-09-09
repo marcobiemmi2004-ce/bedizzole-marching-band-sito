@@ -79,12 +79,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (prevBtn) prevBtn.addEventListener('click', () => goToIndex(currentIndex() - visibleCount(), true));
   if (nextBtn) nextBtn.addEventListener('click', () => goToIndex(currentIndex() + visibleCount(), true));
 
-  viewport.addEventListener('mouseenter', () => {
-    paused = true;
-    if (resumeTimer) window.clearTimeout(resumeTimer);
-  });
-  viewport.addEventListener('mouseleave', () => { paused = false; });
-
   window.addEventListener('resize', () => { measure(); apply(); });
 
   measure();
