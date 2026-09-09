@@ -32,9 +32,13 @@ body {
   background: var(--bmb-white);
   color: var(--bmb-black);
   line-height: 1.55;
-  overflow-x: hidden;
   max-width: 100%;
-  position: relative;
+  /* overflow-x/position were also set here before: setting overflow-x on
+     BOTH html and body makes body its own scroll container (the UA computes
+     overflow-y:auto on it too), which breaks .site-header's position:sticky
+     and desyncs GSAP's pinned cinematic hero from the real viewport scroll
+     — the header would vanish behind the hero while scrolling. html alone
+     is enough to block horizontal drag site-wide. */
 }
 
 h1, h2, h3, h4, .display {
@@ -839,6 +843,21 @@ footer a:hover { color: var(--bmb-green-light); }
 .person-card .name { font-family: 'Oswald', sans-serif; font-size: 1.15rem; }
 
 /* ---------- Novità (homepage) ---------- */
+.attention-flag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-left: 10px;
+  background: var(--bmb-red);
+  color: var(--bmb-white);
+  border-radius: 50%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  vertical-align: middle;
+  transform: translateY(-3px);
+}
 .novita-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 860px) { .novita-list { grid-template-columns: 1fr; } }
 .novita-item {

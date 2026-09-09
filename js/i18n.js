@@ -343,9 +343,11 @@
       'accademia.faq.q6': 'Gli orari delle lezioni sono fissi?',
       'accademia.faq.a6': 'No, si concordano direttamente con l\'insegnante in base alle disponibilità di entrambi.',
       'accademia.faq.q7': 'Frequentare l\'Accademia mi fa entrare automaticamente nella Marching Band?',
-      'accademia.faq.a7': 'No, e non c\'è alcun vincolo: l\'obiettivo è formarti, poi deciderai tu se e quando entrare a far parte della Bedizzole Marching Band.',
+      'accademia.faq.a7': 'No, e non c\'è alcun vincolo: l\'obiettivo è formarti. Quando il tuo livello e la tua preparazione saranno pronti, inizierai a partecipare anche tu alle sfilate, alle parate e agli eventi della Bedizzole Marching Band — sarai sempre tu a decidere se e quando farne davvero parte.',
       'accademia.faq.q8': 'Come prenoto la prova o chiedo altre informazioni?',
       'accademia.faq.a8': 'Chiamando o scrivendo al <a href="contatti.html#accademia-contatti" style="color:var(--bmb-green);font-weight:600;">numero dell\'Accademia</a>: sarà l\'insegnante a ricontattarti per organizzare tutto.',
+      'accademia.faq.q9': 'Come faccio a iscrivermi?',
+      'accademia.faq.a9': 'Contatta il <a href="contatti.html#accademia-contatti" style="color:var(--bmb-green);font-weight:600;">numero dell\'Accademia</a> per prenotare una prova gratuita: se poi decidi di proseguire, si paga la quota di iscrizione di 15€ e si concordano con l\'insegnante giorni e orari delle lezioni.',
 
       // ---- media.html ----
       'media.kicker': 'Media',
@@ -372,7 +374,7 @@
       'contatti.dove.h2': 'Sede prove e contatti',
       'contatti.dove.bmb.label': 'Bedizzole Marching Band',
       'contatti.dove.bmb.orari': 'Prove ogni giovedì, 20:45–22:30',
-      'contatti.dove.bmb.note': 'Per entrare nella Marching Band, scrivi al presidente o al vicepresidente qui sotto.',
+      'contatti.dove.bmb.note': 'Per entrare nella Marching Band, scrivi al <a href="#presidente-contatti" style="color:var(--bmb-green);font-weight:600;">presidente</a> o al <a href="#vicepresidente-contatti" style="color:var(--bmb-green);font-weight:600;">vicepresidente</a> qui sotto.',
       'contatti.dove.accademia.label': 'Accademia Musicale',
       'contatti.dove.accademia.note': 'Chiama questo numero per iscriverti: sarà poi l\'insegnante a ricontattarti. Orari delle lezioni da concordare con l\'insegnante.',
       'contatti.dove.accademia.celllabel': '– cell. Accademia',
@@ -733,9 +735,11 @@
       'accademia.faq.q6': 'Are the lesson times fixed?',
       'accademia.faq.a6': 'No, they\'re arranged directly with the teacher based on both your availability.',
       'accademia.faq.q7': 'Does attending the Academy automatically get me into the Marching Band?',
-      'accademia.faq.a7': 'No, and there\'s no obligation at all: the goal is to train you, and afterwards you decide whether and when to join the Bedizzole Marching Band.',
+      'accademia.faq.a7': 'No, and there\'s no obligation at all: the goal is to train you. Once your level and preparation are ready, you\'ll start taking part in the Bedizzole Marching Band\'s parades and events too — you always decide whether and when to truly join.',
       'accademia.faq.q8': 'How do I book a trial lesson or ask other questions?',
       'accademia.faq.a8': 'Call or message the <a href="contatti.html#accademia-contatti" style="color:var(--bmb-green);font-weight:600;">Academy\'s number</a>: the teacher will get back to you to arrange everything.',
+      'accademia.faq.q9': 'How do I enrol?',
+      'accademia.faq.a9': 'Contact the <a href="contatti.html#accademia-contatti" style="color:var(--bmb-green);font-weight:600;">Academy\'s number</a> to book a free trial lesson: if you then decide to continue, you pay the €15 enrolment fee and arrange lesson days and times with the teacher.',
 
       // ---- media.html ----
       'media.kicker': 'Media',
@@ -761,7 +765,7 @@
       'contatti.dove.h2': 'Rehearsal venue & contacts',
       'contatti.dove.bmb.label': 'Bedizzole Marching Band',
       'contatti.dove.bmb.orari': 'Rehearsals every Thursday, 8:45–10:30 PM',
-      'contatti.dove.bmb.note': 'To join the Marching Band, write to the president or vice-president below.',
+      'contatti.dove.bmb.note': 'To join the Marching Band, write to the <a href="#presidente-contatti" style="color:var(--bmb-green);font-weight:600;">president</a> or <a href="#vicepresidente-contatti" style="color:var(--bmb-green);font-weight:600;">vice-president</a> below.',
       'contatti.dove.accademia.label': 'Music Academy',
       'contatti.dove.accademia.note': 'Call this number to enrol: the teacher will then get back to you directly. Lesson times are arranged directly with the teacher.',
       'contatti.dove.accademia.celllabel': '– Academy mobile',
