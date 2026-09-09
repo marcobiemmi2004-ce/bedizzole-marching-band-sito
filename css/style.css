@@ -843,21 +843,6 @@ footer a:hover { color: var(--bmb-green-light); }
 .person-card .name { font-family: 'Oswald', sans-serif; font-size: 1.15rem; }
 
 /* ---------- Novità (homepage) ---------- */
-.attention-flag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 26px;
-  height: 26px;
-  margin-left: 10px;
-  background: var(--bmb-red);
-  color: var(--bmb-white);
-  border-radius: 50%;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1rem;
-  vertical-align: middle;
-  transform: translateY(-3px);
-}
 .novita-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 860px) { .novita-list { grid-template-columns: 1fr; } }
 .novita-item {
