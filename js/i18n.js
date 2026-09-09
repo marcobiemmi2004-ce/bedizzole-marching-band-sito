@@ -770,7 +770,18 @@
     document.querySelectorAll('.lang-toggle button').forEach((btn) => {
       btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
     });
+
+    document.dispatchEvent(new CustomEvent('bmb:langchange', { detail: { lang } }));
   }
+
+  // Small public helper so other scripts (e.g. the homepage's "next event"
+  // card, which needs to translate text it pulls dynamically from
+  // eventi.html) can look up a dictionary string in the current language
+  // without duplicating DICT.
+  window.BMB_I18N = {
+    t(key) { return (DICT[getLang()] || DICT.it)[key]; },
+    getLang,
+  };
 
   document.addEventListener('DOMContentLoaded', () => {
     const lang = getLang();
