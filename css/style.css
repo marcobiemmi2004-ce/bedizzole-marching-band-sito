@@ -801,6 +801,10 @@ footer a:hover { color: var(--bmb-green-light); }
   border-radius: var(--radius);
   padding: 26px 22px;
   text-align: center;
+  /* So an in-page anchor jump (e.g. contatti.html's "presidente"/
+     "vicepresidente" links) doesn't land with the card's title hidden
+     behind the sticky header (~77px) — leaves a little breathing room too. */
+  scroll-margin-top: 100px;
   /* Senza questo, il testo lungo non a capo (ruolo, email) può forzare la
      card oltre la sua colonna 1fr e far scorrere l'intera pagina in
      orizzontale su mobile. */
