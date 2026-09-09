@@ -18,7 +18,7 @@
       'footer.contacts': 'Contatti',
       'footer.rights': 'Tutti i diritti riservati.',
       'footer.construction': 'Sito in costruzione — bozza di lavoro',
-      'footer.legal': 'P.IVA 02880260985 · CF 93000390174',
+      'footer.legal': 'P.IVA 02880260985 · CF 93000390174<br>Sede legale: <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Vittorio+Emanuele+II%2C+25081+Bedizzole+BS%2C+Italia" target="_blank" rel="noopener" style="color:inherit;">P.zza Vittorio Emanuele II, 25081 Bedizzole (BS)</a>',
 
       // ---- index.html ----
       'hero.eyebrow': '♪ BEDIZZOLE (BS) · DAL CUORE DELLA COMUNITÀ',
@@ -361,8 +361,8 @@
       // ---- contatti.html ----
       'contatti.kicker': 'Contatti',
       'contatti.h1': 'Scrivici o vieni a trovarci',
-      'contatti.sedeprove.label': 'Sede prove · <span style="color:var(--bmb-gold);">Accademia</span>',
-      'contatti.sedelegale.label': 'Sede legale',
+      'contatti.sedeprove.label': 'Sede delle prove BMB e <span style="color:var(--bmb-gold);">Accademia</span>',
+      'contatti.sedeprove.note': 'Questo numero è dedicato all\'Accademia. Per iniziare a suonare con la Marching Band, contatta invece il presidente o il vicepresidente.',
       'contatti.scrivici.kicker': 'Scrivici',
       'contatti.scrivici.h2': 'Email generale',
       'contatti.direttivo.kicker': 'Direttivo',
@@ -384,7 +384,7 @@
       'footer.contacts': 'Contact',
       'footer.rights': 'All rights reserved.',
       'footer.construction': 'Site under construction — work in progress',
-      'footer.legal': 'VAT 02880260985 · Tax code 93000390174',
+      'footer.legal': 'VAT 02880260985 · Tax code 93000390174<br>Registered office: <a href="https://www.google.com/maps/search/?api=1&query=Piazza+Vittorio+Emanuele+II%2C+25081+Bedizzole+BS%2C+Italia" target="_blank" rel="noopener" style="color:inherit;">P.zza Vittorio Emanuele II, 25081 Bedizzole (BS)</a>',
 
       'hero.eyebrow': '♪ BEDIZZOLE (BS), ITALY · FROM THE HEART OF THE COMMUNITY',
       'hero.h1': 'One band, one sound.',
@@ -721,8 +721,8 @@
 
       'contatti.kicker': 'Contact',
       'contatti.h1': 'Write to us, or come visit',
-      'contatti.sedeprove.label': 'Rehearsal venue · <span style="color:var(--bmb-gold);">Academy</span>',
-      'contatti.sedelegale.label': 'Registered office',
+      'contatti.sedeprove.label': 'BMB & <span style="color:var(--bmb-gold);">Academy</span> rehearsal venue',
+      'contatti.sedeprove.note': 'This number is dedicated to the Academy. To start playing with the Marching Band, contact the president or vice-president instead.',
       'contatti.scrivici.kicker': 'Write to us',
       'contatti.scrivici.h2': 'General email',
       'contatti.direttivo.kicker': 'Board',
