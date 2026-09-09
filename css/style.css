@@ -18,12 +18,23 @@
    scrub smoothing on the cinematic hero (overshoot/jank). Internal anchor
    links still jump instantly, which is fine since scrub provides the feel. */
 
+/* Blocca lo scroll/drag orizzontale su tutto il sito (soprattutto da mobile):
+   qualsiasi elemento che sfori anche di pochi pixel viene tagliato invece di
+   rendere l'intera pagina scorrevole a destra/sinistra. */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bmb-white);
   color: var(--bmb-black);
   line-height: 1.55;
+  overflow-x: hidden;
+  max-width: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, .display {
@@ -786,6 +797,11 @@ footer a:hover { color: var(--bmb-green-light); }
   border-radius: var(--radius);
   padding: 26px 22px;
   text-align: center;
+  /* Senza questo, il testo lungo non a capo (ruolo, email) può forzare la
+     card oltre la sua colonna 1fr e far scorrere l'intera pagina in
+     orizzontale su mobile. */
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 /* A small corner photo on a person-card (e.g. contatti.html's "Sede
    prove" cards): positioned out of flow so it never affects the text's
