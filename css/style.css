@@ -787,6 +787,30 @@ footer a:hover { color: var(--bmb-green-light); }
   padding: 26px 22px;
   text-align: center;
 }
+/* A small corner photo on a person-card (e.g. contatti.html's "Sede
+   prove" cards): positioned out of flow so it never affects the text's
+   own width/height, sized to sit in the empty space next to the short
+   lines (role/address/schedule) above the longer note paragraph. On
+   narrow screens there's no such empty space, so it drops back into
+   normal flow as a full-width strip above the text instead. */
+.contact-card-photo {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 150px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .contact-card-photo {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 160px;
+    margin-bottom: 14px;
+  }
+}
 .person-card .role {
   font-family: 'Oswald', sans-serif;
   font-size: 0.75rem;
