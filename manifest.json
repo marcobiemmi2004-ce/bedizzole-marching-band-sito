@@ -1,0 +1,12 @@
+{
+  "name": "Bedizzole Marching Band",
+  "short_name": "BMB",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f8f8f6",
+  "theme_color": "#1e7a41",
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
