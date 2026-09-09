@@ -336,7 +336,7 @@
       'strumento.pianoforte': 'Pianoforte',
       'strumento.canto': 'Canto',
       'accademia.info.h2': 'Informazioni pratiche',
-      'accademia.info.text': 'L\'età minima per iscriversi è di 6 anni. La quota di iscrizione è di 15€. Gli orari delle lezioni sono da concordare direttamente con l\'insegnante, e il costo dei singoli corsi varia da corso a corso: contatta l\'insegnante per saperne di più!',
+      'accademia.info.text': 'L\'età minima per iscriversi è di 5 anni (dai 3 anni per la propedeutica percussioni). La quota di iscrizione è di 15€. Gli orari delle lezioni sono da concordare direttamente con l\'insegnante, e il costo dei singoli corsi varia da corso a corso: contatta l\'insegnante per saperne di più!',
 
       // ---- media.html ----
       'media.kicker': 'Media',
@@ -697,7 +697,7 @@
       'strumento.pianoforte': 'Piano',
       'strumento.canto': 'Singing',
       'accademia.info.h2': 'Practical information',
-      'accademia.info.text': 'The minimum age to enrol is 6 years old. The enrolment fee is €15. Lesson schedules are arranged directly with the teacher, and the cost of each course varies: contact the teacher to find out more!',
+      'accademia.info.text': 'The minimum age to enrol is 5 years old (3 for the introductory percussion course). The enrolment fee is €15. Lesson schedules are arranged directly with the teacher, and the cost of each course varies: contact the teacher to find out more!',
 
       // ---- media.html ----
       'media.kicker': 'Media',
