@@ -797,8 +797,8 @@ footer a:hover { color: var(--bmb-green-light); }
   position: absolute;
   top: 24px;
   right: 24px;
-  width: 150px;
-  height: 130px;
+  width: 128px;
+  height: 108px;
   object-fit: cover;
   border-radius: 10px;
 }
