@@ -1299,6 +1299,9 @@ footer a:hover { color: var(--bmb-green-light); }
 }
 
 .event-block + .event-block { margin-top: 62px; }
+/* So the "Guarda le foto" link from the homepage Novità card doesn't land
+   with the heading hidden behind the sticky header (~77px). */
+.event-block[id] { scroll-margin-top: 100px; }
 .event-block .event-meta {
   color: #6c6f66;
   font-size: 0.92rem;
