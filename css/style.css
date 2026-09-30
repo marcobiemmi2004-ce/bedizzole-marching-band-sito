@@ -1072,14 +1072,15 @@ footer a:hover { color: var(--bmb-green-light); }
 .event-date .year {
   position: absolute;
   top: 50%;
-  right: 4px;
+  right: 3px;
   margin: 0;
   transform: translateY(-50%) rotate(180deg);
   writing-mode: vertical-rl;
   font-family: 'Oswald', sans-serif;
-  font-size: 0.56rem;
-  letter-spacing: 0.03em;
-  color: rgba(248,248,246,0.5);
+  font-weight: 600;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  color: var(--bmb-green-light);
 }
 .event-info { flex: 1; }
 .event-info h3 { font-size: 1.15rem; text-transform: none; margin-bottom: 6px; }
