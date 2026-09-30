@@ -537,10 +537,21 @@ section { padding: 88px 0; }
   width: 25%;
   height: 220px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 @media (max-width: 760px) {
   .gallery-strip img { flex: 0 0 62%; width: 62%; height: 180px; }
 }
+/* The strip crops to a short, wide box (220px / 180px tall) — fine for
+   landscape photos, but a tall portrait source gets cropped down to a thin
+   horizontal slice, and a plain center crop lands on whatever's in the
+   middle of the frame rather than the band. These Oktoberfest photos are
+   portrait shots where the band/color guard sit in the lower half (Torre
+   del Pegol and the street front dominate the top), so bias the crop down
+   to keep them — not the buildings — as the subject.  */
+.gallery-strip img[src*="oktoberfest-02"] { object-position: 50% 80%; }
+.gallery-strip img[src*="oktoberfest-03"] { object-position: 50% 70%; }
+.gallery-strip img[src*="oktoberfest-04"] { object-position: 50% 60%; }
 
 .gallery-dots {
   display: flex;
@@ -1282,9 +1293,15 @@ footer a:hover { color: var(--bmb-green-light); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
   display: block;
   transition: transform .35s ease;
 }
+/* Same portrait Oktoberfest photos as the homepage strip — milder bias
+   here since the 4:3 grid crop is less aggressive, but still keeps the
+   band (lower half of frame) better centred than a plain middle crop. */
+.gallery-item img[src*="oktoberfest-02"] { object-position: 50% 68%; }
+.gallery-item img[src*="oktoberfest-03"] { object-position: 50% 62%; }
 .gallery-item:hover img { transform: scale(1.06); }
 .gallery-item:focus-visible { outline: 3px solid var(--bmb-gold); outline-offset: 2px; }
 
