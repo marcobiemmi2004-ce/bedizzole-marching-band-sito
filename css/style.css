@@ -858,13 +858,21 @@ footer a:hover { color: var(--bmb-green-light); }
      orizzontale su mobile. */
   min-width: 0;
   overflow-wrap: break-word;
+  /* Lets .contact-card-photo below react to this card's own rendered
+     width rather than the viewport's: some people-grids (e.g. contatti.html's
+     "Sede prove" one) are pinned to 2 columns at every screen size via an
+     inline style, so a viewport-based breakpoint would stay in "wide desktop
+     card" mode even when the card itself is actually narrow. */
+  container-type: inline-size;
 }
 /* A small corner photo on a person-card (e.g. contatti.html's "Sede
    prove" cards): positioned out of flow so it never affects the text's
    own width/height, sized to sit in the empty space next to the short
-   lines (role/address/schedule) above the longer note paragraph. On
-   narrow screens there's no such empty space, so it drops back into
-   normal flow as a full-width strip above the text instead. */
+   lines (role/address/schedule) above the longer note paragraph. When the
+   card itself isn't wide enough for that empty space (narrow viewport, or
+   a grid forced to fewer columns), it drops back into normal flow as a
+   full-width strip above the text instead — judged by the card's own
+   width via a container query, not the viewport's. */
 .contact-card-photo {
   position: absolute;
   top: 24px;
@@ -874,7 +882,7 @@ footer a:hover { color: var(--bmb-green-light); }
   object-fit: cover;
   border-radius: 10px;
 }
-@media (max-width: 600px) {
+@container (max-width: 380px) {
   .contact-card-photo {
     position: static;
     display: block;
