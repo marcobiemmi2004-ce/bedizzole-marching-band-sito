@@ -352,6 +352,9 @@
       // ---- media.html ----
       'media.kicker': 'Media',
       'media.h1': 'Foto e video',
+      'media.oktoberfest.kicker': '12–13 settembre 2026',
+      'media.oktoberfest.h2': 'Oktoberfest a Brescia',
+      'media.oktoberfest.p': 'Due giorni tra le vie di Brescia: l\'esibizione nel grande padiglione dell\'Oktoberfest e la sfilata nel centro storico, dal Broletto a Corso Zanardelli, con la color guard protagonista tra la gente.',
       'media.vinay.kicker': '28–31 agosto 2026',
       'media.vinay.h2': '133ª Fête de la Rosière — Vinay',
       'media.vinay.p': 'Quattro giorni di festa in Francia, tra sfilate e spettacoli ufficiali con formazioni da tutta Europa, e anche momenti più spontanei, nati semplicemente per il piacere di suonare insieme alle altre band.',
@@ -744,6 +747,9 @@
       // ---- media.html ----
       'media.kicker': 'Media',
       'media.h1': 'Photos and videos',
+      'media.oktoberfest.kicker': 'September 12–13, 2026',
+      'media.oktoberfest.h2': 'Oktoberfest in Brescia',
+      'media.oktoberfest.p': 'Two days across Brescia: the performance inside the big Oktoberfest tent and the parade through the historic centre, from the Broletto to Corso Zanardelli, with the color guard front and centre among the crowd.',
       'media.vinay.kicker': 'August 28–31, 2026',
       'media.vinay.h2': '133rd Fête de la Rosière — Vinay',
       'media.vinay.p': 'Four days of celebration in France, official parades and shows with bands from across Europe, plus more spontaneous moments, born simply from the joy of playing together with the other bands.',
