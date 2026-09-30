@@ -1064,7 +1064,28 @@ footer a:hover { color: var(--bmb-green-light); }
 }
 .event-date .day { font-family: 'Oswald', sans-serif; font-size: 1.7rem; line-height: 1; }
 .event-date .month { font-family: 'Oswald', sans-serif; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--bmb-green-light); margin-top: 4px; }
-.event-date .year { font-family: 'Oswald', sans-serif; font-size: 0.62rem; letter-spacing: 0.04em; color: rgba(248,248,246,0.55); margin-top: 2px; }
+/* L'anno degli eventi passati non sta più impilato dentro al quadrato
+   nero (che così mostra solo giorno/mese, come le card degli eventi
+   futuri): diventa un nastro diagonale nell'angolo in alto a destra
+   della card. .event-card ha già position:relative e overflow:hidden,
+   quindi fa da riferimento e taglia il nastro ai bordi arrotondati. */
+.event-date .year {
+  position: absolute;
+  top: 16px;
+  right: -34px;
+  width: 130px;
+  margin: 0;
+  transform: rotate(45deg);
+  background: var(--bmb-green);
+  color: var(--bmb-white);
+  text-align: center;
+  padding: 3px 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
 .event-info { flex: 1; }
 .event-info h3 { font-size: 1.15rem; text-transform: none; margin-bottom: 6px; }
 .event-info .loc { color: #55584f; font-size: 0.92rem; }
